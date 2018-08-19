@@ -26,6 +26,7 @@ nav .container>ul {
     align-self: center;
     display: flex;
     list-style: none;
+    margin-right: 10px;
 }
 
 nav ul li {
