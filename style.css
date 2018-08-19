@@ -1,0 +1,189 @@
+/*NAV*/
+
+nav {
+    padding: 15px 0;
+    display: flex;
+    justify-items: center;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .container>ul {
+    margin-left: auto;
+    align-self: center;
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+
+
+/*MAIN HEADER*/
+
+.main-banner {
+    padding: 100px 0;
+    background: #f2f4f6;
+}
+
+.main-banner .row-grid {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    grid-gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-banner h1 {
+    font-size: 4.5em;
+    color: white;
+    font-weight: bold;
+    color: #f2117a;
+    text-transform: uppercase;
+}
+
+.mobile--outer-wrapper {
+    border-radius: 40px;
+    box-shadow: 0px 11px 61px #a9a9a9;
+    overflow: hidden;
+    position: relative;
+    width: 310px;
+    background: linear-gradient(180deg, #fff -45.17%, rgba(255, 255, 255, 0) 130.21%), #FAFBFC;
+    box-shadow: 0 0.5px 2px rgba(0, 18, 57, .1), 0 11px 17px rgba(0, 18, 57, .09), inset 0 -3px 20px rgba(0, 18, 57, .1), inset 0 8px 13px #fff, inset 0 0 7px rgba(0, 18, 57, .05);
+    padding: 10px;
+}
+
+.mobile--inner-wrapper {
+    border-radius: 36px;
+    overflow: hidden;
+    box-shadow: rgba(204, 208, 215, .5) 0 0 2px;
+}
+
+video {
+    display: block;
+    width: 100%;
+}
+
+
+/*Logo Section*/
+
+.section-logos {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-logos h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.logo-items {
+    display: flex;
+}
+
+.logo-item {
+    padding: 30px;
+}
+
+.logo-item img {
+    max-width: 100%;
+}
+
+
+/*Video Section*/
+
+.section-video {
+    padding: 60px 0;
+    background-color: #8886f7;
+}
+
+/*End of page*/
+
+.section-end {
+    padding: 60px 0;
+}
+
+.section-end .row-grid {
+    display: grid;
+    grid-template-columns: 200px 600px;
+    grid-gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-end .logo {
+    width: 250px;
+}
+
+/*Footer*/
+footer {
+	padding: 60px; 0;
+	background: #f2f4f6;
+	position: relative;
+}
+footer:before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: url(https://jigtalk.com/wp-content/themes/jigtalk-co/dist/images/images/navigation-border.png);
+    background-size: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+footer ul {
+	margin-left: auto;
+    align-self: center;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+	padding: 0 10px;
+}
+footer ul li:last-child {
+	padding: 0;
+}
+footer .social-icons {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+footer .social-icons svg {
+	margin-left: 5px;
+}
+/*Buttons*/
+
+.btn-download {
+    border-radius: 2em;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    padding: 15px 35px;
+    text-transform: uppercase;
+}
