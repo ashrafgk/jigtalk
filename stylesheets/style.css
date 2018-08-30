@@ -409,20 +409,22 @@ form button:hover {
   border-radius: 36px;
   overflow: hidden;
   box-shadow: rgba(204, 208, 215, 0.5) 0 0 2px;
+  -webkit-mask: url(../img/border-radius.png);
+  mask: url(../img/border-radius.png);
 }
 
-/* line 278, ../sass/_content.scss */
+/* line 280, ../sass/_content.scss */
 video {
   display: block;
   width: 100%;
 }
 
-/* line 283, ../sass/_content.scss */
+/* line 285, ../sass/_content.scss */
 .mobile--bg {
   display: none;
 }
 @media only screen and (min-width: 992px) {
-  /* line 283, ../sass/_content.scss */
+  /* line 285, ../sass/_content.scss */
   .mobile--bg {
     display: block;
     position: absolute;
@@ -433,7 +435,7 @@ video {
   }
 }
 
-/* line 295, ../sass/_content.scss */
+/* line 297, ../sass/_content.scss */
 .profile-circle {
   position: absolute;
   object-position: center;
@@ -441,7 +443,7 @@ video {
   border-radius: 50%;
 }
 
-/* line 302, ../sass/_content.scss */
+/* line 304, ../sass/_content.scss */
 .profile-pic--1 {
   width: 55px;
   height: 55px;
@@ -450,14 +452,14 @@ video {
   box-shadow: 0px 11px 50px rgba(238, 65, 72, 0.5);
 }
 @media only screen and (min-width: 992px) {
-  /* line 302, ../sass/_content.scss */
+  /* line 304, ../sass/_content.scss */
   .profile-pic--1 {
     top: 86px;
     left: -40px;
   }
 }
 
-/* line 314, ../sass/_content.scss */
+/* line 316, ../sass/_content.scss */
 .profile-pic--2 {
   width: 80px;
   height: 80px;
@@ -466,14 +468,14 @@ video {
   box-shadow: 0px 11px 50px rgba(48, 119, 240, 0.5);
 }
 @media only screen and (min-width: 992px) {
-  /* line 314, ../sass/_content.scss */
+  /* line 316, ../sass/_content.scss */
   .profile-pic--2 {
     top: 90px;
     left: -140px;
   }
 }
 
-/* line 326, ../sass/_content.scss */
+/* line 328, ../sass/_content.scss */
 .profile-pic--3 {
   width: 60px;
   height: 60px;
@@ -482,14 +484,14 @@ video {
   box-shadow: 0px 11px 50px rgba(141, 231, 253, 0.65);
 }
 @media only screen and (min-width: 992px) {
-  /* line 326, ../sass/_content.scss */
+  /* line 328, ../sass/_content.scss */
   .profile-pic--3 {
     top: 160px;
     left: -53px;
   }
 }
 
-/* line 338, ../sass/_content.scss */
+/* line 340, ../sass/_content.scss */
 .profile-pic--4 {
   width: 50px;
   height: 50px;
@@ -498,14 +500,14 @@ video {
   box-shadow: 0px 11px 50px rgba(238, 65, 72, 0.5);
 }
 @media only screen and (min-width: 992px) {
-  /* line 338, ../sass/_content.scss */
+  /* line 340, ../sass/_content.scss */
   .profile-pic--4 {
     top: 190px;
     left: -130px;
   }
 }
 
-/* line 350, ../sass/_content.scss */
+/* line 352, ../sass/_content.scss */
 .profile-pic--5 {
   width: 50px;
   height: 50px;
@@ -514,14 +516,14 @@ video {
   box-shadow: 0px 11px 50px rgba(48, 119, 240, 0.5);
 }
 @media only screen and (min-width: 992px) {
-  /* line 350, ../sass/_content.scss */
+  /* line 352, ../sass/_content.scss */
   .profile-pic--5 {
     top: 360px;
     left: -45px;
   }
 }
 
-/* line 362, ../sass/_content.scss */
+/* line 364, ../sass/_content.scss */
 .profile-pic--6 {
   width: 55px;
   height: 55px;
@@ -531,7 +533,7 @@ video {
   display: none;
 }
 @media only screen and (min-width: 992px) {
-  /* line 362, ../sass/_content.scss */
+  /* line 364, ../sass/_content.scss */
   .profile-pic--6 {
     display: block;
     top: 383px;
@@ -539,7 +541,7 @@ video {
   }
 }
 
-/* line 376, ../sass/_content.scss */
+/* line 378, ../sass/_content.scss */
 .profile-pic--7 {
   width: 50px;
   height: 50px;
@@ -549,7 +551,7 @@ video {
   display: none;
 }
 @media only screen and (min-width: 992px) {
-  /* line 376, ../sass/_content.scss */
+  /* line 378, ../sass/_content.scss */
   .profile-pic--7 {
     display: block;
     top: 437px;
@@ -557,7 +559,7 @@ video {
   }
 }
 
-/* line 390, ../sass/_content.scss */
+/* line 392, ../sass/_content.scss */
 .profile-pic--8 {
   width: 45px;
   height: 45px;
@@ -566,14 +568,14 @@ video {
   box-shadow: 0px 11px 50px rgba(238, 65, 72, 0.5);
 }
 @media only screen and (min-width: 992px) {
-  /* line 390, ../sass/_content.scss */
+  /* line 392, ../sass/_content.scss */
   .profile-pic--8 {
     top: 225px;
     right: 0px;
   }
 }
 
-/* line 402, ../sass/_content.scss */
+/* line 404, ../sass/_content.scss */
 .profile-pic--9 {
   width: 45px;
   height: 45px;
@@ -582,14 +584,14 @@ video {
   box-shadow: 0px 11px 50px rgba(48, 119, 240, 0.5);
 }
 @media only screen and (min-width: 992px) {
-  /* line 402, ../sass/_content.scss */
+  /* line 404, ../sass/_content.scss */
   .profile-pic--9 {
     top: 233px;
     right: -70px;
   }
 }
 
-/* line 414, ../sass/_content.scss */
+/* line 416, ../sass/_content.scss */
 .profile-pic--10 {
   width: 55px;
   height: 55px;
@@ -598,14 +600,14 @@ video {
   box-shadow: 0px 11px 50px rgba(141, 231, 253, 0.65);
 }
 @media only screen and (min-width: 992px) {
-  /* line 414, ../sass/_content.scss */
+  /* line 416, ../sass/_content.scss */
   .profile-pic--10 {
     top: 293px;
     right: -34px;
   }
 }
 
-/* line 426, ../sass/_content.scss */
+/* line 428, ../sass/_content.scss */
 .profile-pic--11 {
   width: 66px;
   height: 66px;
@@ -614,14 +616,14 @@ video {
   box-shadow: 0px 11px 50px rgba(238, 65, 72, 0.5);
 }
 @media only screen and (min-width: 992px) {
-  /* line 426, ../sass/_content.scss */
+  /* line 428, ../sass/_content.scss */
   .profile-pic--11 {
     top: 353px;
     right: -90px;
   }
 }
 
-/* line 438, ../sass/_content.scss */
+/* line 440, ../sass/_content.scss */
 .profile-pic--12 {
   width: 60px;
   height: 60px;
@@ -630,7 +632,7 @@ video {
   box-shadow: 0px 11px 50px rgba(48, 119, 240, 0.5);
 }
 @media only screen and (min-width: 992px) {
-  /* line 438, ../sass/_content.scss */
+  /* line 440, ../sass/_content.scss */
   .profile-pic--12 {
     top: 363px;
     right: 0px;
@@ -638,64 +640,64 @@ video {
 }
 
 /*Logo Section*/
-/* line 452, ../sass/_content.scss */
+/* line 454, ../sass/_content.scss */
 .section-logos {
   padding: 60px 0;
   text-align: center;
 }
 
-/* line 457, ../sass/_content.scss */
+/* line 459, ../sass/_content.scss */
 .section-logos h2 {
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-/* line 462, ../sass/_content.scss */
+/* line 464, ../sass/_content.scss */
 .logo-items {
   display: flex;
   flex-direction: column;
 }
 @media only screen and (min-width: 992px) {
-  /* line 462, ../sass/_content.scss */
+  /* line 464, ../sass/_content.scss */
   .logo-items {
     flex-direction: row;
   }
 }
 
-/* line 470, ../sass/_content.scss */
+/* line 472, ../sass/_content.scss */
 .logo-item {
   padding: 30px;
 }
 @media only screen and (min-width: 992px) {
-  /* line 470, ../sass/_content.scss */
+  /* line 472, ../sass/_content.scss */
   .logo-item {
     padding: 30px;
   }
 }
 
-/* line 477, ../sass/_content.scss */
+/* line 479, ../sass/_content.scss */
 .logo-item img {
   max-width: 100%;
 }
 
 /*Video Section*/
-/* line 483, ../sass/_content.scss */
+/* line 485, ../sass/_content.scss */
 .section-video {
   padding: 60px 0;
   background-color: var(--pink);
 }
-/* line 486, ../sass/_content.scss */
+/* line 488, ../sass/_content.scss */
 .section-video img {
   display: none;
 }
 @media only screen and (min-width: 992px) {
-  /* line 486, ../sass/_content.scss */
+  /* line 488, ../sass/_content.scss */
   .section-video img {
     display: block;
   }
 }
 
-/* line 494, ../sass/_content.scss */
+/* line 496, ../sass/_content.scss */
 .video-container {
   width: 100%;
   margin: auto;
@@ -704,18 +706,18 @@ video {
   box-shadow: 0 0.5px 2px rgba(0, 18, 57, 0.1), 0 11px 17px rgba(0, 18, 57, 0.09), inset 0 -3px 20px rgba(0, 18, 57, 0.1), inset 0 8px 13px #fff, inset 0 0 7px rgba(0, 18, 57, 0.05);
 }
 @media only screen and (min-width: 992px) {
-  /* line 494, ../sass/_content.scss */
+  /* line 496, ../sass/_content.scss */
   .video-container {
     width: 900px;
   }
 }
 
 /*End of page*/
-/* line 507, ../sass/_content.scss */
+/* line 509, ../sass/_content.scss */
 .section-end {
   padding: 60px 0;
 }
-/* line 509, ../sass/_content.scss */
+/* line 511, ../sass/_content.scss */
 .section-end .row-grid {
   display: grid;
   grid-template-columns: 100%;
@@ -725,33 +727,33 @@ video {
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  /* line 509, ../sass/_content.scss */
+  /* line 511, ../sass/_content.scss */
   .section-end .row-grid {
     text-align: left;
     grid-template-columns: 200px 600px;
     grid-gap: 100px;
   }
 }
-/* line 522, ../sass/_content.scss */
+/* line 524, ../sass/_content.scss */
 .section-end .logo {
   width: 250px;
   margin: auto;
 }
 @media only screen and (min-width: 992px) {
-  /* line 522, ../sass/_content.scss */
+  /* line 524, ../sass/_content.scss */
   .section-end .logo {
     margin: 0;
   }
 }
 
 /*Footer*/
-/* line 533, ../sass/_content.scss */
+/* line 535, ../sass/_content.scss */
 footer {
   padding: 60px;
   background: #f2f2f2;
   position: relative;
 }
-/* line 537, ../sass/_content.scss */
+/* line 539, ../sass/_content.scss */
 footer:before {
   content: "";
   display: block;
@@ -763,7 +765,7 @@ footer:before {
   top: 0;
   left: 0;
 }
-/* line 548, ../sass/_content.scss */
+/* line 550, ../sass/_content.scss */
 footer ul {
   justify-content: center;
   display: flex;
@@ -774,34 +776,34 @@ footer ul {
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  /* line 548, ../sass/_content.scss */
+  /* line 550, ../sass/_content.scss */
   footer ul {
     flex-direction: row;
     text-align: left;
   }
 }
-/* line 560, ../sass/_content.scss */
+/* line 562, ../sass/_content.scss */
 footer ul li {
   padding: 10px;
 }
 @media only screen and (min-width: 992px) {
-  /* line 560, ../sass/_content.scss */
+  /* line 562, ../sass/_content.scss */
   footer ul li {
     padding: 0 10px;
   }
 }
-/* line 565, ../sass/_content.scss */
+/* line 567, ../sass/_content.scss */
 footer ul li:last-child {
   padding: 0;
 }
-/* line 570, ../sass/_content.scss */
+/* line 572, ../sass/_content.scss */
 footer .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
-/* line 575, ../sass/_content.scss */
+/* line 577, ../sass/_content.scss */
 footer .social-icons svg {
   margin: 5px 10px;
   width: 50px;
@@ -809,7 +811,7 @@ footer .social-icons svg {
 }
 
 /*Buttons*/
-/* line 585, ../sass/_content.scss */
+/* line 587, ../sass/_content.scss */
 .btn-download {
   border-radius: 2em;
   background-color: #007bff;

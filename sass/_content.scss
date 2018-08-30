@@ -273,6 +273,8 @@ form button:hover {
     border-radius: 36px;
     overflow: hidden;
     box-shadow: rgba(204, 208, 215, .5) 0 0 2px;
+    -webkit-mask: url(../img/border-radius.png);
+    mask: url(../img/border-radius.png);
 }
 
 video {
