@@ -24,6 +24,7 @@ body {
 }
 
 /*Icon Loader*/
+
 @-webkit-keyframes a {
     0%,
     to {
@@ -56,9 +57,10 @@ body {
         opacity: 1;
     }
     100% {
-       opacity: 0;
+        opacity: 0;
     }
 }
+
 .loader-container {
     position: fixed;
     top: 0;
@@ -72,6 +74,7 @@ body {
     visibility: visible;
     animation: o 4.3s forwards ease-in-out;
 }
+
 .loader {
     width: 54px;
     height: 54px;
@@ -83,6 +86,7 @@ body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+
 .loader img {
     position: absolute;
     -webkit-animation: a 1.3s infinite ease-in-out;
@@ -91,24 +95,28 @@ body {
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+
 .loader img:nth-child(4n+1) {
     left: 0;
     top: 0;
     -webkit-animation-delay: .5s;
     animation-delay: .5s;
 }
+
 .loader img:nth-child(4n+2) {
     left: 24px;
     top: 4px;
     -webkit-animation-delay: .75s;
     animation-delay: .75s;
 }
+
 .loader img:nth-child(4n+3) {
     top: 27px;
     left: 14px;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
+
 .loader img:nth-child(4n+4) {
     top: 16px;
     left: -4px;
@@ -117,6 +125,7 @@ body {
 }
 
 /*NAV*/
+
 nav {
     padding: 15px 0;
     display: flex;
@@ -161,55 +170,69 @@ nav ul li a {
 .main-banner {
     padding: 100px 0;
     background: #f2f4f6;
-}
-
-.main-banner .row-grid {
-    display: grid;
-    grid-template-columns: 1fr 350px;
-    grid-gap: 200px;
-    justify-content: center;
-    align-items: center;
-}
-
-/*Mobile*/
-@media (max-width: 575px) {
-    .main-banner .row-grid {
+    overflow: hidden;
+    .row-grid {
         display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 60px;
+        grid-template-columns: 100%;
+        grid-gap: 60;
         justify-content: center;
         align-items: center;
+        @media #{$md} {
+            grid-template-columns: 1fr 350px;
+            grid-gap: 200px;
+        }
     }
-}
-
-.main-banner h1 {
-    font-size: 4.5em;
-    color: var(--blue-light);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    /*background: url(img/text-bg.png);
+    .container {
+        overflow: hidden;
+    }
+    header {
+        margin-bottom: 60px;
+        @media #{$md} {
+            margin-bottom: 0px;
+        }
+    }
+    h1 {
+        font-size: 2.5em;
+        color: var(--blue-light);
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @media #{$md} {
+            font-size: 4.5em;
+        }
+        /*background: url(img/text-bg.png);
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-position: 50% 80%;*/
+    }
+    span {
+        color: var(--pink);
+    }
 }
 
-.main-banner span {
-    color: var(--pink);
-    
-}
+/*Form*/
+
 form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    @media #{$md} {
+        flex-direction: row;
+    }
 }
+
 form input.input--phone-number {
-    width: 400px;
+    width: 100%;
     border: 0;
     border-radius: 1em;
     padding: 10px 15px;
-    margin-right: 10px;
+    margin-bottom: 10px;
+    @media #{$md} {
+        margin-right: 10px;
+        width: 400px;
+    }
 }
+
 form button {
     border-radius: 1em;
     background-color: #007bff;
@@ -223,6 +246,7 @@ form button {
     box-shadow: 0px 3px 21px #007bff;
     transition: 0.3s box-shadow ease;
 }
+
 form button:hover {
     background-color: #006fe6;
     box-shadow: 0px 1px 10px #006fe6;
@@ -233,10 +257,15 @@ form button:hover {
     box-shadow: 0px 11px 61px #a9a9a9;
     overflow: hidden;
     position: relative;
-    width: 310px;
+    width: 280px;
     background: linear-gradient(180deg, #fff -45.17%, rgba(255, 255, 255, 0) 130.21%), #FAFBFC;
     box-shadow: 0 0.5px 2px rgba(0, 18, 57, .1), 0 11px 17px rgba(0, 18, 57, .09), inset 0 -3px 20px rgba(0, 18, 57, .1), inset 0 8px 13px #fff, inset 0 0 7px rgba(0, 18, 57, .05);
     padding: 10px;
+    margin: 20px auto;
+    @media #{$md} {
+        width: 310px;
+        margin: 0;
+    }
 }
 
 .mobile--inner-wrapper {
@@ -292,8 +321,8 @@ video {
 .profile-pic--5 {
     width: 50px;
     height: 50px;
-        top: 360px;
-        left: -45px;
+    top: 360px;
+    left: -45px;
     box-shadow: 0px 11px 50px rgba(48, 119, 240, 0.5);
 }
 
@@ -306,10 +335,10 @@ video {
 }
 
 .profile-pic--7 {
-        width: 50px;
-        height: 50px;
-        top: 437px;
-        left: -60px;
+    width: 50px;
+    height: 50px;
+    top: 437px;
+    left: -60px;
     box-shadow: 0px 11px 50px rgba(238, 65, 72, 0.5);
 }
 
@@ -367,10 +396,18 @@ video {
 
 .logo-items {
     display: flex;
+     flex-direction: column;
+    @media #{$md} {
+        flex-direction: row;
+    }
 }
 
 .logo-item {
     padding: 30px;
+    @media #{$md} {
+        padding: 30px;
+    }
+    
 }
 
 .logo-item img {
@@ -382,25 +419,46 @@ video {
 .section-video {
     padding: 60px 0;
     background-color: var(--pink);
+    img {
+        display: none;
+        @media #{$md} {
+            display: block;
+        }
+    }
+}
+
+.video-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0.5px 2px rgba(0, 18, 57, .1), 0 11px 17px rgba(0, 18, 57, .09), inset 0 -3px 20px rgba(0, 18, 57, .1), inset 0 8px 13px #fff, inset 0 0 7px rgba(0, 18, 57, .05);
+    @media #{$md} {
+        width: 900px;
+    }
 }
 
 /*End of page*/
 
 .section-end {
     padding: 60px 0;
+    .row-grid {
+        display: grid;
+        grid-template-columns:100%;
+        grid-gap: 100px;
+        justify-content: center;
+        align-items: center;
+         @media #{$md} {
+             grid-template-columns: 200px 600px;
+         }
+    }
+    .logo {
+        width: 250px;
+    }
 }
 
-.section-end .row-grid {
-    display: grid;
-    grid-template-columns: 200px 600px;
-    grid-gap: 100px;
-    justify-content: center;
-    align-items: center;
-}
 
-.section-end .logo {
-    width: 250px;
-}
+.section-end 
 
 /*Footer*/
 
@@ -444,6 +502,7 @@ footer .social-icons {
     align-items: center;
     margin-bottom: 30px;
 }
+
 footer .social-icons svg {
     margin: 5px 10px;
     width: 50px;
@@ -460,25 +519,4 @@ footer .social-icons svg {
     font-style: italic;
     padding: 15px 35px;
     text-transform: uppercase;
-}
-
-/*Mobile*/
-@media (max-width: 575px) {
-
-}
-
-/*iPad Vertical*/
-@media (min-width: 576px) {
-
-}
-
-/*iPad Horizontal*/
-@media (min-width: 768px) {
-
-}
-
-
-/*Desktop*/
-@media (min-width: 992px) {
-
 }
