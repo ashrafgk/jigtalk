@@ -179,6 +179,7 @@ body {
 }
 
 /*Form*/
+
 .app-download--container {
     display: grid;
     grid-template-columns: repeat(2, minmax(100px, 200px));
@@ -188,13 +189,14 @@ body {
         display: none;
     }
 }
+
 .download-form {
     display: none;
-     @media #{$lg} {
-         display: block;
-         
-     }
+    @media #{$lg} {
+        display: block;
+    }
 }
+
 form {
     display: flex;
     width: 100%;
