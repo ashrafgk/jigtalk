@@ -140,12 +140,15 @@ body {
         justify-content: center;
         align-items: center;
         @media #{$md} {
+            grid-template-columns: 40% repeat(1, minmax(100px, 1fr));
+            grid-gap: 100px;
+        }
+        @media #{$lg} {
             grid-template-columns: 1fr 350px;
             grid-gap: 200px;
         }
     }
     .container {
-        overflow: hidden;
         @media #{$md} {
             overflow: visible;
         }
@@ -161,7 +164,7 @@ body {
         }
     }
     h1 {
-        font-size:7vh;
+        font-size: 7vh;
         color: var(--blue-light);
         font-weight: bold;
         text-transform: uppercase;
@@ -169,11 +172,6 @@ body {
         @media #{$md} {
             font-size: 4.5em;
         }
-        /*background: url(img/text-bg.png);
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-position: 50% 80%;*/
     }
     span {
         color: var(--pink);
@@ -181,13 +179,29 @@ body {
 }
 
 /*Form*/
-
+.app-download--container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 200px));
+    grid-gap: 15px;
+    justify-content: center;
+    @media #{$lg} {
+        display: none;
+    }
+}
+.download-form {
+    display: none;
+     @media #{$lg} {
+         display: block;
+         
+     }
+}
 form {
     display: flex;
-    flex-direction: column;
-    @media #{$md} {
-        flex-direction: row;
-    }
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    flex-direction: row;
+    margin: 0;
 }
 
 form input.input--phone-number {
@@ -196,7 +210,7 @@ form input.input--phone-number {
     border-radius: 1em;
     padding: 10px 15px;
     margin-bottom: 10px;
-    @media #{$md} {
+    @media #{$lg} {
         margin-right: 10px;
         margin-bottom: 0;
         width: 400px;
@@ -233,12 +247,16 @@ form button:hover {
     box-shadow: 0px 1px 10px #006fe6;
 }
 
+.mobile--container {
+    margin: auto;
+}
+
 .mobile--outer-wrapper {
     border-radius: 40px;
     box-shadow: 0px 11px 61px #a9a9a9;
     overflow: hidden;
     position: relative;
-    width: 250px;
+    width: 230px;
     background: linear-gradient(180deg, #fff -45.17%, rgba(255, 255, 255, 0) 130.21%), #FAFBFC;
     box-shadow: 0 0.5px 2px rgba(0, 18, 57, .1), 0 11px 17px rgba(0, 18, 57, .09), inset 0 -3px 20px rgba(0, 18, 57, .1), inset 0 8px 13px #fff, inset 0 0 7px rgba(0, 18, 57, .05);
     padding: 10px;
@@ -283,7 +301,7 @@ video {
     width: 55px;
     height: 55px;
     top: 86px;
-    left: 10px;
+    left: 20px;
     box-shadow: 0px 11px 50px rgba(238, 65, 72, 0.5);
     @media #{$md} {
         top: 86px;
@@ -295,24 +313,24 @@ video {
     width: 80px;
     height: 80px;
     top: 90px;
-    left: -90px;
+    left: -80px;
     box-shadow: 0px 11px 50px rgba(48, 119, 240, 0.5);
-     @media #{$md} {
-         top: 90px;
-         left: -140px;
-     }
+    @media #{$md} {
+        top: 90px;
+        left: -140px;
+    }
 }
 
 .profile-pic--3 {
     width: 60px;
     height: 60px;
     top: 160px;
-    left: -3px;
+    left: -10px;
     box-shadow: 0px 11px 50px rgba(141, 231, 253, 0.65);
-     @media #{$md} {
-         top: 160px;
-         left: -53px;
-     }
+    @media #{$md} {
+        top: 160px;
+        left: -53px;
+    }
 }
 
 .profile-pic--4 {
@@ -321,34 +339,36 @@ video {
     top: 190px;
     left: -80px;
     box-shadow: 0px 11px 50px rgba(238, 65, 72, 0.5);
-     @media #{$md} {
-         top: 190px;
-         left: -130px;
-     }
+    @media #{$md} {
+        top: 190px;
+        left: -130px;
+    }
 }
 
 .profile-pic--5 {
     width: 50px;
     height: 50px;
     top: 360px;
-    left: -1px;
+    left: -45px;
     box-shadow: 0px 11px 50px rgba(48, 119, 240, 0.5);
-     @media #{$md} {
-         top: 360px;
-         left: -45px;
-     }
+    @media #{$md} {
+        top: 360px;
+        left: -45px;
+    }
 }
 
 .profile-pic--6 {
     width: 55px;
     height: 55px;
-    top: 383px;
-    left: -70px;
+    top: 373px;
+    left: -110px;
     box-shadow: 0px 11px 50px rgba(141, 231, 253, 0.65);
-     @media #{$md} {
-         top: 383px;
-         left: -110px;
-     }
+    display: none;
+    @media #{$md} {
+        display: block;
+        top: 383px;
+        left: -110px;
+    }
 }
 
 .profile-pic--7 {
@@ -357,58 +377,60 @@ video {
     top: 437px;
     left: -10px;
     box-shadow: 0px 11px 50px rgba(238, 65, 72, 0.5);
-     @media #{$md} {
-         top: 437px;
-         left: -60px
-     }
+    display: none;
+    @media #{$md} {
+        display: block;
+        top: 437px;
+        left: -60px
+    }
 }
 
 .profile-pic--8 {
     width: 45px;
     height: 45px;
     top: 225px;
-    right: 10px;
+    right: 0px;
     box-shadow: 0px 11px 50px rgba(238, 65, 72, 0.5);
-     @media #{$md} {
-         top: 225px;
-         right: 0px;
-     }
+    @media #{$md} {
+        top: 225px;
+        right: 0px;
+    }
 }
 
 .profile-pic--9 {
     width: 45px;
     height: 45px;
     top: 233px;
-    right: -50px;
+    right: -70px;
     box-shadow: 0px 11px 50px rgba(48, 119, 240, 0.5);
-     @media #{$md} {
-         top: 233px;
-         right: -70px;
-     }
+    @media #{$md} {
+        top: 233px;
+        right: -70px;
+    }
 }
 
 .profile-pic--10 {
     width: 55px;
     height: 55px;
     top: 293px;
-    right: -24px;
+    right: -34px;
     box-shadow: 0px 11px 50px rgba(141, 231, 253, 0.65);
-     @media #{$md} {
-         top: 293px;
-         right: -34px;
-     }
+    @media #{$md} {
+        top: 293px;
+        right: -34px;
+    }
 }
 
 .profile-pic--11 {
     width: 66px;
     height: 66px;
     top: 353px;
-    right: -120px;
+    right: -90px;
     box-shadow: 0px 11px 50px rgba(238, 65, 72, 0.5);
-     @media #{$md} {
-         top: 353px;
-         right: -90px;
-     }
+    @media #{$md} {
+        top: 353px;
+        right: -90px;
+    }
 }
 
 .profile-pic--12 {
@@ -417,10 +439,10 @@ video {
     top: 363px;
     right: 60px;
     box-shadow: 0px 11px 50px rgba(48, 119, 240, 0.5);
-     @media #{$md} {
-         top: 363px;
-         right: 0px;
-     }
+    @media #{$md} {
+        top: 363px;
+        right: 0px;
+    }
 }
 
 /*Logo Section*/
@@ -555,7 +577,6 @@ footer {
         }
     }
 }
-
 
 /*Buttons*/
 
