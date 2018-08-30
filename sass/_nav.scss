@@ -14,10 +14,22 @@ nav {
         width: 150px;
     }
     .links-wrapper {
-        display: flex;
+        display: none;
         justify-self: flex-start;
         margin-left: auto;
         align-items: center;
+        @media #{$md} {
+            display: flex;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            display: flex;
+            list-style: none;
+            text-align: center;
+        }
     }
     ul {
         list-style: none;
@@ -45,5 +57,15 @@ nav {
         border: 1px solid #ddd;
         justify-self: flex-end;
         margin-left: auto;
+        @media #{$md} {
+            display: none;
+        }
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        svg {
+            margin: 0 5px;
+        }
     }
 }

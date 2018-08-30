@@ -127,9 +127,12 @@ body {
 /*MAIN HEADER*/
 
 .main-banner {
-    padding: 100px 0;
+    padding: 30px 0;
     background: #f2f4f6;
     overflow: hidden;
+    @media #{$md} {
+        padding: 100px 0;
+    }
     .row-grid {
         display: grid;
         grid-template-columns: 100%;
@@ -149,12 +152,16 @@ body {
     }
     header {
         margin-bottom: 60px;
+        order: 2;
+        text-align: center;
         @media #{$md} {
             margin-bottom: 0px;
+            text-align: left;
+            order: 0;
         }
     }
     h1 {
-        font-size: 2.5em;
+        font-size:7vh;
         color: var(--blue-light);
         font-weight: bold;
         text-transform: uppercase;
@@ -231,7 +238,7 @@ form button:hover {
     box-shadow: 0px 11px 61px #a9a9a9;
     overflow: hidden;
     position: relative;
-    width: 280px;
+    width: 250px;
     background: linear-gradient(180deg, #fff -45.17%, rgba(255, 255, 255, 0) 130.21%), #FAFBFC;
     box-shadow: 0 0.5px 2px rgba(0, 18, 57, .1), 0 11px 17px rgba(0, 18, 57, .09), inset 0 -3px 20px rgba(0, 18, 57, .1), inset 0 8px 13px #fff, inset 0 0 7px rgba(0, 18, 57, .05);
     padding: 10px;
@@ -253,6 +260,18 @@ video {
     width: 100%;
 }
 
+.mobile--bg {
+    display: none;
+    @media #{$md} {
+        display: block;
+        position: absolute;
+        left: -210px;
+        top: 40px;
+        width: 730px;
+        margin: auto;
+    }
+}
+
 .profile-circle {
     position: absolute;
     object-position: center;
@@ -264,96 +283,144 @@ video {
     width: 55px;
     height: 55px;
     top: 86px;
-    left: -40px;
+    left: 10px;
     box-shadow: 0px 11px 50px rgba(238, 65, 72, 0.5);
+    @media #{$md} {
+        top: 86px;
+        left: -40px;
+    }
 }
 
 .profile-pic--2 {
     width: 80px;
     height: 80px;
     top: 90px;
-    left: -140px;
+    left: -90px;
     box-shadow: 0px 11px 50px rgba(48, 119, 240, 0.5);
+     @media #{$md} {
+         top: 90px;
+         left: -140px;
+     }
 }
 
 .profile-pic--3 {
     width: 60px;
     height: 60px;
     top: 160px;
-    left: -53px;
+    left: -3px;
     box-shadow: 0px 11px 50px rgba(141, 231, 253, 0.65);
+     @media #{$md} {
+         top: 160px;
+         left: -53px;
+     }
 }
 
 .profile-pic--4 {
     width: 50px;
     height: 50px;
     top: 190px;
-    left: -130px;
+    left: -80px;
     box-shadow: 0px 11px 50px rgba(238, 65, 72, 0.5);
+     @media #{$md} {
+         top: 190px;
+         left: -130px;
+     }
 }
 
 .profile-pic--5 {
     width: 50px;
     height: 50px;
     top: 360px;
-    left: -45px;
+    left: -1px;
     box-shadow: 0px 11px 50px rgba(48, 119, 240, 0.5);
+     @media #{$md} {
+         top: 360px;
+         left: -45px;
+     }
 }
 
 .profile-pic--6 {
     width: 55px;
     height: 55px;
     top: 383px;
-    left: -110px;
+    left: -70px;
     box-shadow: 0px 11px 50px rgba(141, 231, 253, 0.65);
+     @media #{$md} {
+         top: 383px;
+         left: -110px;
+     }
 }
 
 .profile-pic--7 {
     width: 50px;
     height: 50px;
     top: 437px;
-    left: -60px;
+    left: -10px;
     box-shadow: 0px 11px 50px rgba(238, 65, 72, 0.5);
+     @media #{$md} {
+         top: 437px;
+         left: -60px
+     }
 }
 
 .profile-pic--8 {
     width: 45px;
     height: 45px;
     top: 225px;
-    right: 0px;
+    right: 10px;
     box-shadow: 0px 11px 50px rgba(238, 65, 72, 0.5);
+     @media #{$md} {
+         top: 225px;
+         right: 0px;
+     }
 }
 
 .profile-pic--9 {
     width: 45px;
     height: 45px;
     top: 233px;
-    right: -70px;
+    right: -50px;
     box-shadow: 0px 11px 50px rgba(48, 119, 240, 0.5);
+     @media #{$md} {
+         top: 233px;
+         right: -70px;
+     }
 }
 
 .profile-pic--10 {
     width: 55px;
     height: 55px;
     top: 293px;
-    right: -34px;
+    right: -24px;
     box-shadow: 0px 11px 50px rgba(141, 231, 253, 0.65);
+     @media #{$md} {
+         top: 293px;
+         right: -34px;
+     }
 }
 
 .profile-pic--11 {
-    width: 80px;
-    height: 80px;
+    width: 66px;
+    height: 66px;
     top: 353px;
-    right: -110px;
+    right: -120px;
     box-shadow: 0px 11px 50px rgba(238, 65, 72, 0.5);
+     @media #{$md} {
+         top: 353px;
+         right: -90px;
+     }
 }
 
 .profile-pic--12 {
     width: 60px;
     height: 60px;
     top: 363px;
-    right: 0px;
+    right: 60px;
     box-shadow: 0px 11px 50px rgba(48, 119, 240, 0.5);
+     @media #{$md} {
+         top: 363px;
+         right: 0px;
+     }
 }
 
 /*Logo Section*/
@@ -418,15 +485,22 @@ video {
     .row-grid {
         display: grid;
         grid-template-columns: 100%;
-        grid-gap: 100px;
+        grid-gap: 60px;
         justify-content: center;
         align-items: center;
+        text-align: center;
         @media #{$md} {
+            text-align: left;
             grid-template-columns: 200px 600px;
+            grid-gap: 100px;
         }
     }
     .logo {
         width: 250px;
+        margin: auto;
+        @media #{$md} {
+            margin: 0
+        }
     }
 }
 
