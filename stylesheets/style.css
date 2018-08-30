@@ -4,7 +4,7 @@ nav {
   padding: 15px 0;
   display: flex;
   justify-items: center;
-  z-index: 1030;
+  z-index: 40;
   background: white;
 }
 @media only screen and (min-width: 1200px) {
@@ -14,7 +14,7 @@ nav {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030;
+    z-index: 40;
     background: white;
     height: 70px;
   }
