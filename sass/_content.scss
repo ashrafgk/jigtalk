@@ -275,6 +275,8 @@ form button:hover {
     box-shadow: rgba(204, 208, 215, .5) 0 0 2px;
     -webkit-mask: url(../img/border-radius.png);
     mask: url(../img/border-radius.png);
+        -webkit-mask-size: cover;
+        -webkit-mask-position: 50%;
 }
 
 video {
