@@ -124,47 +124,6 @@ body {
     animation-delay: 1.25s;
 }
 
-/*NAV*/
-
-nav {
-    padding: 15px 0;
-    display: flex;
-    justify-items: center;
-}
-
-nav .container {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    width: 150px;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav .container>ul {
-    margin-left: auto;
-    align-self: center;
-    display: flex;
-    list-style: none;
-    margin-right: 10px;
-}
-
-nav ul li {
-    padding: 10px;
-}
-
-nav ul li a {
-    font-weight: bold;
-    font-size: 0.9em;
-    text-transform: uppercase;
-}
-
 /*MAIN HEADER*/
 
 .main-banner {
@@ -184,6 +143,9 @@ nav ul li a {
     }
     .container {
         overflow: hidden;
+        @media #{$md} {
+            overflow: visible;
+        }
     }
     header {
         margin-bottom: 60px;
@@ -229,7 +191,19 @@ form input.input--phone-number {
     margin-bottom: 10px;
     @media #{$md} {
         margin-right: 10px;
+        margin-bottom: 0;
         width: 400px;
+    }
+    &:focus {
+        background-color: #dddddd;
+        outline: 0;
+    }
+    &.grey-bg {
+        background-color: #f2f4f6;
+        &:focus {
+            background-color: #dddddd;
+            outline: 0;
+        }
     }
 }
 
@@ -396,7 +370,7 @@ video {
 
 .logo-items {
     display: flex;
-     flex-direction: column;
+    flex-direction: column;
     @media #{$md} {
         flex-direction: row;
     }
@@ -407,7 +381,6 @@ video {
     @media #{$md} {
         padding: 30px;
     }
-    
 }
 
 .logo-item img {
@@ -444,21 +417,18 @@ video {
     padding: 60px 0;
     .row-grid {
         display: grid;
-        grid-template-columns:100%;
+        grid-template-columns: 100%;
         grid-gap: 100px;
         justify-content: center;
         align-items: center;
-         @media #{$md} {
-             grid-template-columns: 200px 600px;
-         }
+        @media #{$md} {
+            grid-template-columns: 200px 600px;
+        }
     }
     .logo {
         width: 250px;
     }
 }
-
-
-.section-end 
 
 /*Footer*/
 
@@ -466,48 +436,52 @@ footer {
     padding: 60px;
     background: #f2f2f2;
     position: relative;
+    &:before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: url(https://jigtalk.com/wp-content/themes/jigtalk-co/dist/images/images/navigation-border.png);
+        background-size: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    ul {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        @media #{$md} {
+            flex-direction: row;
+            text-align: left;
+        }
+        li {
+            padding: 10px;
+            @media #{$md} {
+                padding: 0 10px;
+            }
+            &:last-child {
+                padding: 0;
+            }
+        }
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        svg {
+            margin: 5px 10px;
+            width: 50px;
+            height: 50px;
+        }
+    }
 }
 
-footer:before {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 100%;
-    background: url(https://jigtalk.com/wp-content/themes/jigtalk-co/dist/images/images/navigation-border.png);
-    background-size: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-footer ul {
-    justify-content: center;
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-footer ul li {
-    padding: 0 10px;
-}
-
-footer ul li:last-child {
-    padding: 0;
-}
-
-footer .social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-footer .social-icons svg {
-    margin: 5px 10px;
-    width: 50px;
-    height: 50px;
-}
 
 /*Buttons*/
 
