@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JIGTALK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+
+<body>
+    <div class="loader-container">
+        <div class="loader">
+            <img src="https://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/loader-shape1.svg" alt="">
+    
+            <img src="https://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/loader-shape2.svg" alt="">
+    
+            <img src="https://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/loader-shape3.svg" alt="">
+    
+            <img src="https://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/loader-shape4.svg" alt="">
+        </div>
+    </div>
+    <!-- Main Nav -->
+    <nav>
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="https://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/logo-text.svg" style="max-width: 75px;">
+            </div>
+            <div class="links-wrapper">
+                <ul>
+                    <!-- Links -->
+                    <li>
+                        <a href="https://jigtalk.com/contact/">Contact</a>
+                    </li>
+                    <li>
+                        <a href="https://jigtalk.com/blog/">The Bloj</a>
+                    </li>
+                    <li>
+                        <a href="https://jigtalk.com/press/">Press</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                More
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <ul>
+                                    <li>
+                                        <a href="https://jigtalk.com/faq/">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://jigtalk.com/terms/">Terms</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://jigtalk.com/privacy/">Privacy</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://jigtalk.com/safety/">Safety</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                            <path fill="#aaa" fill-rule="evenodd" d="M0 15.207C0 6.808 6.808 0 15.207 0c8.398 0 15.207 6.808 15.207 15.207 0 8.398-6.809 15.207-15.207 15.207C6.808 30.414 0 23.605 0 15.207zm16.285 8.434v-8.273h2.284l.302-2.851h-2.586l.004-1.427c0-.744.07-1.142 1.139-1.142h1.427V7.097h-2.284c-2.743 0-3.71 1.383-3.71 3.708v1.712h-1.71v2.851h1.71v8.273h3.424z"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31">
+                            <path fill="#aaa" fill-rule="evenodd" d="M.62 15.207C.62 6.808 7.43 0 15.829 0c8.398 0 15.206 6.808 15.206 15.207 0 8.398-6.808 15.207-15.206 15.207C7.429 30.414.62 23.605.62 15.207zM15.9 7.4c-2.036 0-2.292.009-3.092.045-.798.037-1.343.163-1.82.349a3.673 3.673 0 0 0-1.329.865 3.682 3.682 0 0 0-.865 1.328c-.186.477-.313 1.022-.349 1.82-.036.8-.045 1.056-.045 3.093s.01 2.292.045 3.092c.037.798.163 1.343.349 1.82.191.493.448.912.865 1.329.416.417.835.674 1.328.865.477.186 1.022.312 1.82.349.8.036 1.056.045 3.093.045s2.292-.009 3.092-.045c.798-.037 1.344-.163 1.82-.349a3.67 3.67 0 0 0 1.329-.865c.417-.417.673-.836.865-1.329.185-.477.311-1.022.349-1.82.036-.8.045-1.055.045-3.092s-.01-2.292-.045-3.092c-.038-.799-.164-1.344-.349-1.82a3.681 3.681 0 0 0-.865-1.33 3.666 3.666 0 0 0-1.329-.864c-.478-.186-1.023-.312-1.821-.349-.8-.036-1.055-.045-3.093-.045h.003zm-.672 1.352h.673c2.002 0 2.24.007 3.03.043.732.033 1.128.155 1.393.258.35.136.6.298.862.56.262.263.425.513.561.863.103.265.225.661.258 1.393.036.79.044 1.028.044 3.03 0 2-.008 2.238-.044 3.03-.033.73-.155 1.127-.258 1.391-.136.35-.299.6-.561.862a2.32 2.32 0 0 1-.862.56c-.264.104-.661.226-1.393.26-.79.035-1.028.043-3.03.043-2.003 0-2.24-.008-3.031-.044-.731-.034-1.128-.156-1.393-.258-.35-.136-.6-.299-.862-.561a2.325 2.325 0 0 1-.561-.862c-.103-.264-.225-.661-.259-1.393-.036-.79-.043-1.028-.043-3.03 0-2.003.007-2.24.043-3.03.034-.731.156-1.128.259-1.393.136-.35.298-.6.56-.862.263-.263.513-.425.863-.562.265-.103.662-.225 1.393-.258.692-.031.96-.04 2.358-.042v.002zm4.676 1.245a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8zm-4.003 1.051a3.852 3.852 0 1 0 0 7.704 3.852 3.852 0 0 0 0-7.704zm0 1.352a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31">
+                            <path fill="#aaa" fill-rule="evenodd" d="M.62 15.207C.62 6.808 7.43 0 15.829 0c8.398 0 15.206 6.808 15.206 15.207 0 8.398-6.808 15.207-15.206 15.207C7.429 30.414.62 23.605.62 15.207zm14.752-2.847l.032.527-.532-.065c-1.936-.247-3.627-1.084-5.063-2.491l-.702-.698-.18.515c-.384 1.15-.14 2.363.659 3.179.425.45.33.515-.405.247-.255-.086-.478-.15-.5-.118-.074.075.181 1.052.383 1.439.277.537.84 1.063 1.458 1.374l.52.247-.616.01c-.596 0-.617.012-.553.237.213.698 1.053 1.44 1.989 1.761l.66.226-.575.343a5.989 5.989 0 0 1-2.85.795c-.48.01-.873.054-.873.086 0 .107 1.298.709 2.053.945 2.266.698 4.957.397 6.978-.795 1.436-.848 2.872-2.534 3.542-4.166.362-.87.723-2.46.723-3.222 0-.494.032-.558.628-1.149.35-.343.68-.72.744-.827.107-.204.096-.204-.446-.021-.904.322-1.032.279-.585-.204.33-.344.723-.967.723-1.15 0-.031-.16.022-.34.119-.192.107-.617.268-.936.365l-.575.183-.521-.355c-.287-.193-.691-.408-.904-.472-.543-.15-1.372-.13-1.862.043-1.33.483-2.17 1.729-2.074 3.092z"></path>
+                        </svg>
+                    </div>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <svg id="burger-icon" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 20 20" width="20" height="20"
+                    space="preserve">
+                    <line id="line1" x1="0" y1="5" x2="20" y2="5" style="fill: none; stroke-width: 2; stroke: rgb(23, 25, 29);"></line>
+                    <line id="line2" x1="0" y1="15" x2="20" y2="15" style="fill: none; stroke-width: 2; stroke: rgb(23, 25, 29);"></line>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <!-- Links -->
+                    <li>
+                        <a href="https://jigtalk.com/contact/">Contact</a>
+                    </li>
+                    <li>
+                        <a href="https://jigtalk.com/blog/">The Bloj</a>
+                    </li>
+                    <li>
+                        <a href="https://jigtalk.com/press/">Press</a>
+                    </li>
+
+                    <li>
+                        <a href="https://jigtalk.com/faq/">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="https://jigtalk.com/terms/">Terms</a>
+                    </li>
+                    <li>
+                        <a href="https://jigtalk.com/privacy/">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="https://jigtalk.com/safety/">Safety</a>
+                    </li>
+                </ul>
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                        <path fill="#aaa" fill-rule="evenodd" d="M0 15.207C0 6.808 6.808 0 15.207 0c8.398 0 15.207 6.808 15.207 15.207 0 8.398-6.809 15.207-15.207 15.207C6.808 30.414 0 23.605 0 15.207zm16.285 8.434v-8.273h2.284l.302-2.851h-2.586l.004-1.427c0-.744.07-1.142 1.139-1.142h1.427V7.097h-2.284c-2.743 0-3.71 1.383-3.71 3.708v1.712h-1.71v2.851h1.71v8.273h3.424z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31">
+                        <path fill="#aaa" fill-rule="evenodd" d="M.62 15.207C.62 6.808 7.43 0 15.829 0c8.398 0 15.206 6.808 15.206 15.207 0 8.398-6.808 15.207-15.206 15.207C7.429 30.414.62 23.605.62 15.207zM15.9 7.4c-2.036 0-2.292.009-3.092.045-.798.037-1.343.163-1.82.349a3.673 3.673 0 0 0-1.329.865 3.682 3.682 0 0 0-.865 1.328c-.186.477-.313 1.022-.349 1.82-.036.8-.045 1.056-.045 3.093s.01 2.292.045 3.092c.037.798.163 1.343.349 1.82.191.493.448.912.865 1.329.416.417.835.674 1.328.865.477.186 1.022.312 1.82.349.8.036 1.056.045 3.093.045s2.292-.009 3.092-.045c.798-.037 1.344-.163 1.82-.349a3.67 3.67 0 0 0 1.329-.865c.417-.417.673-.836.865-1.329.185-.477.311-1.022.349-1.82.036-.8.045-1.055.045-3.092s-.01-2.292-.045-3.092c-.038-.799-.164-1.344-.349-1.82a3.681 3.681 0 0 0-.865-1.33 3.666 3.666 0 0 0-1.329-.864c-.478-.186-1.023-.312-1.821-.349-.8-.036-1.055-.045-3.093-.045h.003zm-.672 1.352h.673c2.002 0 2.24.007 3.03.043.732.033 1.128.155 1.393.258.35.136.6.298.862.56.262.263.425.513.561.863.103.265.225.661.258 1.393.036.79.044 1.028.044 3.03 0 2-.008 2.238-.044 3.03-.033.73-.155 1.127-.258 1.391-.136.35-.299.6-.561.862a2.32 2.32 0 0 1-.862.56c-.264.104-.661.226-1.393.26-.79.035-1.028.043-3.03.043-2.003 0-2.24-.008-3.031-.044-.731-.034-1.128-.156-1.393-.258-.35-.136-.6-.299-.862-.561a2.325 2.325 0 0 1-.561-.862c-.103-.264-.225-.661-.259-1.393-.036-.79-.043-1.028-.043-3.03 0-2.003.007-2.24.043-3.03.034-.731.156-1.128.259-1.393.136-.35.298-.6.56-.862.263-.263.513-.425.863-.562.265-.103.662-.225 1.393-.258.692-.031.96-.04 2.358-.042v.002zm4.676 1.245a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8zm-4.003 1.051a3.852 3.852 0 1 0 0 7.704 3.852 3.852 0 0 0 0-7.704zm0 1.352a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31">
+                        <path fill="#aaa" fill-rule="evenodd" d="M.62 15.207C.62 6.808 7.43 0 15.829 0c8.398 0 15.206 6.808 15.206 15.207 0 8.398-6.808 15.207-15.206 15.207C7.429 30.414.62 23.605.62 15.207zm14.752-2.847l.032.527-.532-.065c-1.936-.247-3.627-1.084-5.063-2.491l-.702-.698-.18.515c-.384 1.15-.14 2.363.659 3.179.425.45.33.515-.405.247-.255-.086-.478-.15-.5-.118-.074.075.181 1.052.383 1.439.277.537.84 1.063 1.458 1.374l.52.247-.616.01c-.596 0-.617.012-.553.237.213.698 1.053 1.44 1.989 1.761l.66.226-.575.343a5.989 5.989 0 0 1-2.85.795c-.48.01-.873.054-.873.086 0 .107 1.298.709 2.053.945 2.266.698 4.957.397 6.978-.795 1.436-.848 2.872-2.534 3.542-4.166.362-.87.723-2.46.723-3.222 0-.494.032-.558.628-1.149.35-.343.68-.72.744-.827.107-.204.096-.204-.446-.021-.904.322-1.032.279-.585-.204.33-.344.723-.967.723-1.15 0-.031-.16.022-.34.119-.192.107-.617.268-.936.365l-.575.183-.521-.355c-.287-.193-.691-.408-.904-.472-.543-.15-1.372-.13-1.862.043-1.33.483-2.17 1.729-2.074 3.092z"></path>
+                    </svg>
+                </div>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Main Banner -->
+    <div class="main-banner">
+        <div class="container">
+            <div class="row-grid">
+                <header>
+                    <h1>
+                        <span>Talk</span> more.
+                        <br>
+                        <span>Date</span> Better.</h1>
+                    <p style="margin-bottom: 45px;">Some text that explains the game, no longer than 300 characters. And calls attention to the download
+                        button below.</p>
+                    <!-- Call to Actions Buttons -->
+                    <div class="app-download--container">
+                        <img src="https://www.klipfolio.com/sites/all/themes/klipfolio_theme/img/icons/icon-app-store.svg" style="width: 100%;">
+                        <img src="https://www.klipfolio.com/sites/all/themes/klipfolio_theme/img/icons/icon-google-play.svg" style="width: 100%;">
+                    </div>
+                    <!-- Download App Form -->
+                    <div class="download-form">
+                        <p>Enter your number to download the app on your phone.</p>
+                        <form>
+                            <input class="input--phone-number" type="tel" placeholder="+1">
+                            <button> Download </button>
+                        </form>
+                    </div>
+                </header>
+                <div class="mobile--container" style="position: relative;">
+                    <img src="bg.png" class="mobile--bg">
+                    <img src="img/guy-5.jpg" class="profile-circle profile-pic--1">
+                    <img src="img/girl-2.jpg" class="profile-circle profile-pic--2">
+                    <img src="img/girl-3.jpg" class="profile-circle profile-pic--3">
+                    <img src="img/guy-8.jpg" class="profile-circle profile-pic--4">
+                    <img src="img/girl-4.jpg" class="profile-circle profile-pic--5">
+                    <img src="img/guy-2.jpg" class="profile-circle profile-pic--6">
+                    <img src="img/guy-3.jpg" class="profile-circle profile-pic--7">
+                    <img src="img/guy-4.jpg" class="profile-circle profile-pic--8">
+                    <img src="img/girl-1.jpg" class="profile-circle profile-pic--9">
+                    <img src="img/guy-6.jpg" class="profile-circle profile-pic--10">
+                    <img src="img/girl-5.jpg" class="profile-circle profile-pic--11">
+                    <img src="img/girl-6.jpg" class="profile-circle profile-pic--12">
+                    <div class="mobile--outer-wrapper">
+                        <div class="mobile--inner-wrapper">
+                            <video src="https://jigtalk.com/wp-content/uploads/2017/12/phone-video.mp4" playsinline autoplay muted loop></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-logos">
+        <div class="container">
+            <h2>People have been talking about us!</h2>
+            <div class="logo-items">
+                <div class="logo-item">
+                    <a href="https://news.sky.com/" target="_blank">
+                        <img src="https://jigtalk.com/wp-content/uploads/2017/12/sky-news.svg" alt="">
+                    </a>
+                </div>
+                <!-- /.logo-item -->
+                <div class="logo-item">
+                    <a href="http://www.huffingtonpost.co.uk/rachel-conlisk/dating-apps_b_16763186.html" target="_blank">
+                        <img src="https://jigtalk.com/wp-content/uploads/2017/12/huffington-post.svg" alt="">
+                    </a>
+                </div>
+                <!-- /.logo-item -->
+                <div class="logo-item">
+                    <a href="http://www.telegraph.co.uk/men/relationships/best-dating-apps-sites-men/" target="_blank">
+                        <img src="https://jigtalk.com/wp-content/uploads/2017/12/the-telegraph.svg" alt="">
+                    </a>
+                </div>
+                <!-- /.logo-item -->
+                <div class="logo-item">
+                    <a href="http://www.techradar.com/news/love-at-first-type-meet-the-personality-led-dating-app-taking-on-tinder" target="_blank">
+                        <img src="https://jigtalk.com/wp-content/uploads/2017/12/tech-radar.svg" alt="">
+                    </a>
+                </div>
+                <!-- /.logo-item -->
+                <div class="logo-item">
+                    <a href="https://www.thetimes.co.uk/article/i-belong-to-glasgow-dear-old-start-up-town-5rgmv8k99" target="_blank">
+                        <img src="https://jigtalk.com/wp-content/uploads/2017/12/sunday-times.svg" alt="">
+                    </a>
+                </div>
+                <!-- /.logo-item -->
+            </div>
+        </div>
+        <!-- /.logo-items -->
+    </div>
+    <div class="section-video" style="position: relative;">
+        <div class="container">
+            <img src="https://jigtalk.com/wp-content/uploads/2018/05/Female-0x1634.png" style="position: absolute;top: 150px;right: 0;width: 220px;z-index: 23;">
+            <img src="https://jigtalk.com/wp-content/uploads/2018/05/Male-0x1634.png" style="position: absolute;top: 150px;left: 0;width: 220px;z-index: 23;">
+            <div class="video-container" style="">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UQW7bgceIMI?rel=0&amp;showinfo=0" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-end">
+        <div class="container">
+            <div class="row-grid">
+                <div class="logo">
+                    <img src="https://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/logo-icon.svg" style="max-width: 65px;">
+                    <img src="https://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/logo-text.svg" style="max-width: 120px; margin-left: 10px;">
+                </div>
+                <div class="text-cta">
+                    <h2 style="margin-bottom: 30px;">The dating app where people actually talk</h2>
+                    <div class="app-download--container">
+                        <img src="https://www.klipfolio.com/sites/all/themes/klipfolio_theme/img/icons/icon-app-store.svg" style="width: 100%;">
+                        <img src="https://www.klipfolio.com/sites/all/themes/klipfolio_theme/img/icons/icon-google-play.svg" style="width: 100%;">
+                    </div>
+                    <!-- Download App Form -->
+                    <div class="download-form">
+                        <p>Enter your number to download the app on your phone.</p>
+                        <form>
+                            <input class="input--phone-number grey-bg" type="tel" placeholder="+1">
+                            <button> Download </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+                    <path fill="#aaa" fill-rule="evenodd" d="M0 15.207C0 6.808 6.808 0 15.207 0c8.398 0 15.207 6.808 15.207 15.207 0 8.398-6.809 15.207-15.207 15.207C6.808 30.414 0 23.605 0 15.207zm16.285 8.434v-8.273h2.284l.302-2.851h-2.586l.004-1.427c0-.744.07-1.142 1.139-1.142h1.427V7.097h-2.284c-2.743 0-3.71 1.383-3.71 3.708v1.712h-1.71v2.851h1.71v8.273h3.424z"></path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31">
+                    <path fill="#aaa" fill-rule="evenodd" d="M.62 15.207C.62 6.808 7.43 0 15.829 0c8.398 0 15.206 6.808 15.206 15.207 0 8.398-6.808 15.207-15.206 15.207C7.429 30.414.62 23.605.62 15.207zM15.9 7.4c-2.036 0-2.292.009-3.092.045-.798.037-1.343.163-1.82.349a3.673 3.673 0 0 0-1.329.865 3.682 3.682 0 0 0-.865 1.328c-.186.477-.313 1.022-.349 1.82-.036.8-.045 1.056-.045 3.093s.01 2.292.045 3.092c.037.798.163 1.343.349 1.82.191.493.448.912.865 1.329.416.417.835.674 1.328.865.477.186 1.022.312 1.82.349.8.036 1.056.045 3.093.045s2.292-.009 3.092-.045c.798-.037 1.344-.163 1.82-.349a3.67 3.67 0 0 0 1.329-.865c.417-.417.673-.836.865-1.329.185-.477.311-1.022.349-1.82.036-.8.045-1.055.045-3.092s-.01-2.292-.045-3.092c-.038-.799-.164-1.344-.349-1.82a3.681 3.681 0 0 0-.865-1.33 3.666 3.666 0 0 0-1.329-.864c-.478-.186-1.023-.312-1.821-.349-.8-.036-1.055-.045-3.093-.045h.003zm-.672 1.352h.673c2.002 0 2.24.007 3.03.043.732.033 1.128.155 1.393.258.35.136.6.298.862.56.262.263.425.513.561.863.103.265.225.661.258 1.393.036.79.044 1.028.044 3.03 0 2-.008 2.238-.044 3.03-.033.73-.155 1.127-.258 1.391-.136.35-.299.6-.561.862a2.32 2.32 0 0 1-.862.56c-.264.104-.661.226-1.393.26-.79.035-1.028.043-3.03.043-2.003 0-2.24-.008-3.031-.044-.731-.034-1.128-.156-1.393-.258-.35-.136-.6-.299-.862-.561a2.325 2.325 0 0 1-.561-.862c-.103-.264-.225-.661-.259-1.393-.036-.79-.043-1.028-.043-3.03 0-2.003.007-2.24.043-3.03.034-.731.156-1.128.259-1.393.136-.35.298-.6.56-.862.263-.263.513-.425.863-.562.265-.103.662-.225 1.393-.258.692-.031.96-.04 2.358-.042v.002zm4.676 1.245a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8zm-4.003 1.051a3.852 3.852 0 1 0 0 7.704 3.852 3.852 0 0 0 0-7.704zm0 1.352a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"></path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31">
+                    <path fill="#aaa" fill-rule="evenodd" d="M.62 15.207C.62 6.808 7.43 0 15.829 0c8.398 0 15.206 6.808 15.206 15.207 0 8.398-6.808 15.207-15.206 15.207C7.429 30.414.62 23.605.62 15.207zm14.752-2.847l.032.527-.532-.065c-1.936-.247-3.627-1.084-5.063-2.491l-.702-.698-.18.515c-.384 1.15-.14 2.363.659 3.179.425.45.33.515-.405.247-.255-.086-.478-.15-.5-.118-.074.075.181 1.052.383 1.439.277.537.84 1.063 1.458 1.374l.52.247-.616.01c-.596 0-.617.012-.553.237.213.698 1.053 1.44 1.989 1.761l.66.226-.575.343a5.989 5.989 0 0 1-2.85.795c-.48.01-.873.054-.873.086 0 .107 1.298.709 2.053.945 2.266.698 4.957.397 6.978-.795 1.436-.848 2.872-2.534 3.542-4.166.362-.87.723-2.46.723-3.222 0-.494.032-.558.628-1.149.35-.343.68-.72.744-.827.107-.204.096-.204-.446-.021-.904.322-1.032.279-.585-.204.33-.344.723-.967.723-1.15 0-.031-.16.022-.34.119-.192.107-.617.268-.936.365l-.575.183-.521-.355c-.287-.193-.691-.408-.904-.472-.543-.15-1.372-.13-1.862.043-1.33.483-2.17 1.729-2.074 3.092z"></path>
+                </svg>
+            </div>
+            <ul>
+                <li>
+                    <a href="https://jigtalk.com/contact/">Contact</a>
+                </li>
+                <li>
+                    <a href="https://jigtalk.com/blog/">The Bloj</a>
+                </li>
+                <li>
+                    <a href="https://jigtalk.com/press/">Press</a>
+                </li>
+                <li>
+                    <a href="https://jigtalk.com/faq/">FAQ</a>
+                </li>
+                <li>
+                    <a href="https://jigtalk.com/terms/">Terms</a>
+                </li>
+                <li>
+                    <a href="https://jigtalk.com/privacy/">Privacy</a>
+                </li>
+                <li>
+                    <a href="https://jigtalk.com/safety/">Safety</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>

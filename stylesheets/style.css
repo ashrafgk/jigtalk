@@ -4,19 +4,33 @@ nav {
   padding: 15px 0;
   display: flex;
   justify-items: center;
+  z-index: 1030;
+  background: white;
 }
-/* line 7, ../sass/_nav.scss */
+@media only screen and (min-width: 1200px) {
+  /* line 3, ../sass/_nav.scss */
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background: white;
+    height: 70px;
+  }
+}
+/* line 18, ../sass/_nav.scss */
 nav .container {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* line 13, ../sass/_nav.scss */
+/* line 24, ../sass/_nav.scss */
 nav .logo {
   width: 150px;
 }
-/* line 16, ../sass/_nav.scss */
+/* line 27, ../sass/_nav.scss */
 nav .links-wrapper {
   display: none;
   justify-self: flex-start;
@@ -24,12 +38,12 @@ nav .links-wrapper {
   align-items: center;
 }
 @media only screen and (min-width: 992px) {
-  /* line 16, ../sass/_nav.scss */
+  /* line 27, ../sass/_nav.scss */
   nav .links-wrapper {
     display: flex;
   }
 }
-/* line 24, ../sass/_nav.scss */
+/* line 35, ../sass/_nav.scss */
 nav .links-wrapper ul {
   list-style: none;
   margin: 0;
@@ -39,7 +53,7 @@ nav .links-wrapper ul {
   list-style: none;
   text-align: center;
 }
-/* line 34, ../sass/_nav.scss */
+/* line 45, ../sass/_nav.scss */
 nav ul {
   list-style: none;
   margin: auto;
@@ -50,23 +64,23 @@ nav ul {
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  /* line 34, ../sass/_nav.scss */
+  /* line 45, ../sass/_nav.scss */
   nav ul {
     margin-left: auto;
     margin-right: 10px;
   }
 }
-/* line 46, ../sass/_nav.scss */
+/* line 57, ../sass/_nav.scss */
 nav ul li {
   padding: 10px;
 }
-/* line 48, ../sass/_nav.scss */
+/* line 59, ../sass/_nav.scss */
 nav ul li a {
   font-weight: bold;
   font-size: 0.9em;
   text-transform: uppercase;
 }
-/* line 55, ../sass/_nav.scss */
+/* line 66, ../sass/_nav.scss */
 nav button.navbar-toggler {
   border-radius: 0.5rem;
   border: 1px solid #ddd;
@@ -74,17 +88,17 @@ nav button.navbar-toggler {
   margin-left: auto;
 }
 @media only screen and (min-width: 992px) {
-  /* line 55, ../sass/_nav.scss */
+  /* line 66, ../sass/_nav.scss */
   nav button.navbar-toggler {
     display: none;
   }
 }
-/* line 64, ../sass/_nav.scss */
+/* line 75, ../sass/_nav.scss */
 nav .social-icons {
   display: flex;
   justify-content: center;
 }
-/* line 67, ../sass/_nav.scss */
+/* line 78, ../sass/_nav.scss */
 nav .social-icons svg {
   margin: 0 5px;
 }
