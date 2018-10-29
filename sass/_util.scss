@@ -1,3 +1,28 @@
+:root {
+    --blue: #3078f2;
+    --pink: #ff6ba3;
+    --red: #f0404a;
+    --blue-light: #8de7fd;
+    --grey-light: #f2f2f2;
+    --grey-medium: #cccccc;
+    --grey-dark: #808080;
+    --black: #231f20;
+}
+
+/* Font */
+
+@font-face {
+    font-family: Avenir;
+    src: url(../fonts/AvenirLTStd-Roman.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../fonts/AvenirLTStd-Black.otf);
+    font-weight: bold;
+}
+
 //====================================================
 //  Media Queries
 //====================================================
@@ -5,3 +30,16 @@ $xs: "only screen and (max-width: 767px)";
 $sm: "only screen and (min-width: 768px)";
 $md: "only screen and (min-width: 992px)";
 $lg: "only screen and (min-width: 1200px)";
+
+.xs-hidden {
+    display: none;
+    @media #{$lg} {
+        display: block;
+    }
+}
+.lg-hidden {
+    display: block;
+    @media #{$lg} {
+        display: none;
+    }
+}

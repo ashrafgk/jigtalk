@@ -1,0 +1,91 @@
+
+/*Form*/
+.app-download--container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 200px));
+    grid-gap: 15px;
+    justify-content: center;
+    @media #{$lg} {
+        display: none;
+    }
+}
+.download-form {
+    display: none;
+    @media #{$lg} {
+        display: block;
+    }
+    p {
+        color: #bbb;
+    }
+}
+form {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    flex-direction: row;
+    margin: 0 0 15px 0;
+}
+form input.input--country-code {
+    width: 30%;
+    border: 0;
+    border-radius: 1em;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    @media #{$lg} {
+        margin-right: 10px;
+        margin-bottom: 0;
+        width: 100px;
+    }
+    &:focus {
+        background-color: #dddddd;
+        outline: 0;
+    }
+    &.grey-bg {
+        background-color: var(--grey-light);
+        &:focus {
+            background-color: #dddddd;
+            outline: 0;
+        }
+    }
+}
+form input.input--phone-number {
+    width: 100%;
+    border: 0;
+    border-radius: 1em;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    @media #{$lg} {
+        margin-right: 10px;
+        margin-bottom: 0;
+        width: 400px;
+    }
+    &:focus {
+        background-color: #dddddd;
+        outline: 0;
+    }
+    &.grey-bg {
+        background-color: var(--grey-light);
+        &:focus {
+            background-color: #dddddd;
+            outline: 0;
+        }
+    }
+}
+form button {
+    border: 2px solid var(--black);
+    box-shadow: 0px 3px 0 0 var(--black);
+    border-radius: 1em;
+    background-color: white;
+    color: var(--black);
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    
+    transition: 0.3s box-shadow ease;
+}
+form button:hover {
+    box-shadow: 0px 2px 0 0 var(--black);
+}

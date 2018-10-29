@@ -1,30 +1,11 @@
-:root {
-    --blue: #3078f2;
-    --pink: #ff6ba3;
-    --red: #f0404a;
-    --blue-light: #8de7fd;
-}
 
-/* Font */
-
-@font-face {
-    font-family: Avenir;
-    src: url(../fonts/AvenirLTStd-Roman.otf);
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: Avenir;
-    src: url(../fonts/AvenirLTStd-Black.otf);
-    font-weight: bold;
-}
 
 body {
     font-family: Avenir;
 }
 
 .main-mobile-banner {
-    background-color: #f2f2f2;
+    background-color: var(--grey-light);
     height: calc(100vh - 60px);
     display: flex;
     align-items: center;
@@ -50,9 +31,12 @@ body {
 }
 /*MAIN HEADER*/
 .main-banner {
+    height: calc(100vh - 60px);
+    max-height: 900px;
     padding: 30px 0;
     background: white;
     overflow: hidden;
+    position: relative;
     @media #{$md} {
         padding: 100px 0;
     }
@@ -100,6 +84,24 @@ body {
         color: var(--pink);
     }
 }
+@keyframes c {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+.scroll-down {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30px;
+    transform: translateY(0);
+    animation: c 600ms infinite alternate;
+}
 
 /*Form*/
 .app-download--container {
@@ -144,7 +146,7 @@ form input.input--country-code {
         outline: 0;
     }
     &.grey-bg {
-        background-color: #f2f2f2;
+        background-color: var(--grey-light);
         &:focus {
             background-color: #dddddd;
             outline: 0;
@@ -167,7 +169,7 @@ form input.input--phone-number {
         outline: 0;
     }
     &.grey-bg {
-        background-color: #f2f2f2;
+        background-color: var(--grey-light);
         &:focus {
             background-color: #dddddd;
             outline: 0;
@@ -175,11 +177,11 @@ form input.input--phone-number {
     }
 }
 form button {
-    border: 2px solid black;
-    box-shadow: 0px 3px 0 0 black;
+    border: 2px solid var(--black);
+    box-shadow: 0px 3px 0 0 var(--black);
     border-radius: 1em;
     background-color: white;
-    color: black;
+    color: var(--black);
     cursor: pointer;
     font-weight: bold;
     font-style: italic;
@@ -189,7 +191,7 @@ form button {
     transition: 0.3s box-shadow ease;
 }
 form button:hover {
-    box-shadow: 0px 2px 0 0 black;
+    box-shadow: 0px 2px 0 0 var(--black);
 }
 .mobile--container {
     margin: auto;
@@ -225,7 +227,7 @@ video {
 
 /*Press Section*/
 .section-logos {
-    background-color: #f2f2f2;
+    background-color: var(--grey-light);
     padding: 60px 0;
     text-align: center;
 }
@@ -332,7 +334,11 @@ img[class*="puzzle-piece-"] {
 /*End of page*/
 .section-end {
     padding: 60px 0;
-    background-color: #f2f2f2;
+    background-color: var(--grey-light);
+    display: none;
+    @media #{$lg} {
+        display: block;
+    }
     .row-grid {
         display: grid;
         grid-template-columns: 100%;
@@ -391,7 +397,7 @@ footer {
                 padding: 0;
             }
             a {
-                color: black;
+                color: var(--black);
             }
         }
     }

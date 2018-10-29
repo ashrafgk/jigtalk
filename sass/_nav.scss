@@ -5,7 +5,7 @@ nav {
     display: flex;
     justify-items: center;
     z-index: 40;
-    background: #f2f2f2;
+    background: var(--grey-light);
     position: relative;
     &:before {
         content: "";
@@ -23,7 +23,7 @@ nav {
     }
     @media #{$lg} {
         z-index: 40;
-        background: #f2f2f2;
+        background: var(--grey-light);
         height: 70px;
     }
     .container {
@@ -75,18 +75,19 @@ nav {
                 font-weight: bold;
                 font-size: 0.9em;
                 text-transform: uppercase;
-                color: black;
+                color: var(--black);
             }
         }
     }
     .navbar-collapse {
-        background: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.0);
         position: fixed;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
         padding: 30px;
+        transition: 250ms background-color ease;
         .app-store-btn {
             margin: 15px 0;
         }
@@ -94,22 +95,37 @@ nav {
             position: absolute;
             right: 20px;
         }
-    }
-    ul.navbar-nav li {
-        border-bottom: 1px solid #ddd;
-        &:nth-child(1) {
-            border-top:1px solid #ddd;
+        >div {
+            opacity: 0;
+            transition: 300ms opacity 250ms ease;
         }
-        &:nth-child(odd) {
-
-        }
-        &:nth-child(even) {
-            background-color: #f2f2f2;
+        &.show {
+            background-color: rgba(0, 0, 0, 0.6);
+            >div {
+                opacity: 1;
+            }
         }
     }
     .dropdown ul {
         flex-direction: column;
     }
+    ul.navbar-nav li {
+        border-bottom: 1px solid var(--grey-medium);
+        &:nth-child(1) {
+            border-top:1px solid var(--grey-medium);
+        }
+        &:nth-child(even) {
+            background-color: var(--grey-light);
+        }
+        a {
+            font-size: 1.2em;
+        }
+    }
+    .sub-links {
+        color: var(--grey-dark);
+        padding: 10px;
+    }
+   
     button.navbar-toggler {
         justify-self: flex-end;
         margin-left: auto;
