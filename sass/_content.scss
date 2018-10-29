@@ -197,15 +197,15 @@ img[class*="puzzle-piece-"] {
     to {transform: scale(0)}
 }
 /*  First Row  */
-.puzzle-piece-1 { left: 0px; top: 0px; animation: example 600ms 600ms forwards;}
-.puzzle-piece-2 { left: 60px; top: 0px; animation: example 600ms calc(600ms*5) forwards;}
-.puzzle-piece-3 { left: 100px; top: 0px; animation: example 600ms calc(600ms*7) forwards;}
-.puzzle-piece-4 { left: 180px; top: 0px; animation: example 600ms calc(600ms*11) forwards;}
+.puzzle-piece-1 { left: 0px; top: 0px; animation: example 600ms 600ms infinite forwards alternate;}
+.puzzle-piece-2 { left: 60px; top: 0px; animation: example 600ms calc(600ms*5) infinite forwards alternate;}
+.puzzle-piece-3 { left: 100px; top: 0px; animation: example 600ms calc(600ms*7) infinite forwards alternate;}
+.puzzle-piece-4 { left: 180px; top: 0px; animation: example 600ms calc(600ms*11) infinite forwards alternate;}
 
 /*  Second Row  */
-.puzzle-piece-5 { left: 0px; top: 43px; animation: example 600ms calc(600ms*16) forwards;}
-.puzzle-piece-6 { left: 41px; top: 65px; animation: example 600ms calc(600ms*2) forwards;}
-.puzzle-piece-7 { left: 118px; top: 45px; animation: example 600ms calc(600ms*8) forwards;}
+.puzzle-piece-5 { left: 0px; top: 43px; animation: example 600ms calc(600ms*16) forwards alternate;}
+.puzzle-piece-6 { left: 41px; top: 65px; animation: example 600ms calc(600ms*2) forwards alternate;}
+.puzzle-piece-7 { left: 118px; top: 45px; animation: example 600ms calc(600ms*8) forwards alternate;}
 .puzzle-piece-8 { left: 162px; top: 64px; animation: example 600ms calc(600ms*10) forwards;}
 
 /*  Third Row  */
@@ -219,6 +219,7 @@ img[class*="puzzle-piece-"] {
 .puzzle-piece-14 { left: 42px; top: 187px; animation: example 600ms calc(600ms*9) forwards;}
 .puzzle-piece-15 { left: 119px; top: 167px; animation: example 600ms calc(600ms*14) forwards;}
 .puzzle-piece-16 { left: 162px; top: 187px; animation: example 600ms calc(600ms*3) forwards;}
+
 
 .section-video {
     padding: 60px 0;

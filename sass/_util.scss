@@ -43,3 +43,8 @@ $lg: "only screen and (min-width: 1200px)";
         display: none;
     }
 }
+
+.freeze-screen {
+    overflow: hidden;
+    height: 100%;
+}
