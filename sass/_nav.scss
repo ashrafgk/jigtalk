@@ -5,16 +5,27 @@ nav {
     display: flex;
     justify-items: center;
     z-index: 40;
-    background: white;
-     @media #{$lg} {
-         position: fixed;
-         top: 0;
-         right: 0;
-         left: 0;
-         z-index: 40;
-         background: white;
-         height: 70px;
-     }
+    background: #f2f2f2;
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background: url(https://jigtalk.com/wp-content/themes/jigtalk-co/dist/images/images/navigation-border.png);
+        background-size: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @media #{$lg} {
+            bottom: 0;
+        }
+    }
+    @media #{$lg} {
+        z-index: 40;
+        background: #f2f2f2;
+        height: 70px;
+    }
     .container {
         display: flex;
         align-items: center;
@@ -23,6 +34,10 @@ nav {
     }
     .logo {
         width: 150px;
+        display: none;
+        @media #{$lg} {
+            display: block;
+        }
     }
     .links-wrapper {
         display: none;
@@ -60,12 +75,38 @@ nav {
                 font-weight: bold;
                 font-size: 0.9em;
                 text-transform: uppercase;
+                color: black;
             }
         }
     }
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 30px;
+        .app-store-btn {
+            margin: 15px 0;
+        }
+    }
+    ul.navbar-nav li {
+        border-bottom: 1px solid #ddd;
+        &:nth-child(1) {
+            border-top:1px solid #ddd;
+        }
+        &:nth-child(odd) {
+
+        }
+        &:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    }
+    .dropdown ul {
+        flex-direction: column;
+    }
     button.navbar-toggler {
-        border-radius: 0.5rem;
-        border: 1px solid #ddd;
         justify-self: flex-end;
         margin-left: auto;
         @media #{$md} {

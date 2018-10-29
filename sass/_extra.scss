@@ -1,0 +1,100 @@
+/*Icon Loader*/
+
+@-webkit-keyframes a {
+    0%,
+    to {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1)
+    }
+    50% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1)
+    }
+}
+
+@keyframes a {
+    0%,
+    to {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1)
+    }
+    50% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1)
+    }
+}
+
+@keyframes o {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #fff;
+    display: block;
+    z-index: 50;
+    opacity: 1;
+    visibility: visible;
+    animation: o 4.3s forwards ease-in-out;
+}
+
+.loader {
+    width: 54px;
+    height: 54px;
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.loader img {
+    position: absolute;
+    -webkit-animation: a 1.3s infinite ease-in-out;
+    animation: a 1.3s infinite ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.loader img:nth-child(4n+1) {
+    left: 0;
+    top: 0;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+.loader img:nth-child(4n+2) {
+    left: 24px;
+    top: 4px;
+    -webkit-animation-delay: .75s;
+    animation-delay: .75s;
+}
+
+.loader img:nth-child(4n+3) {
+    top: 27px;
+    left: 14px;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.loader img:nth-child(4n+4) {
+    top: 16px;
+    left: -4px;
+    -webkit-animation-delay: 1.25s;
+    animation-delay: 1.25s;
+}
