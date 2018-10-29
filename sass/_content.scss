@@ -4,12 +4,12 @@ body {
 //MAIN BANNER SECTIONS
 .main-mobile-banner {
     background-color: var(--grey-light);
-    height: calc(100vh - 100px);
+    height: calc(100vh - 60px);
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: relative;
     @media #{$lg} {
         display: none;
     }

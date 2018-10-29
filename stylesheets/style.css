@@ -235,12 +235,12 @@ body {
 /* line 5, ../sass/_content.scss */
 .main-mobile-banner {
   background-color: var(--grey-light);
-  height: calc(100vh - 100px);
+  height: calc(100vh - 60px);
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: relative;
 }
 @media only screen and (min-width: 1200px) {
   /* line 5, ../sass/_content.scss */
