@@ -463,40 +463,49 @@ video {
 /* line 166, ../sass/_content.scss */
 .person-left {
   position: absolute;
-  top: 120px;
+  top: 70px;
   left: 15px;
-  width: 260px;
+  width: 220px;
   z-index: 23;
 }
 /* line 172, ../sass/_content.scss */
 .person-left .puzzle-pieces {
-  top: 0px;
-  left: 45px;
+  top: -86px;
+  left: -60px;
+  transform: scale(0.3) rotateZ(5deg);
+  display: block;
+  width: 260px;
+  height: 270px;
 }
 
-/* line 177, ../sass/_content.scss */
+/* line 181, ../sass/_content.scss */
 .person-right {
   position: absolute;
-  top: 120px;
-  right: 15px;
-  width: 260px;
-  z-index: 23;
+  top: 65px;
+  right: 25px;
+  width: 220px;
+  z-index: 100;
 }
-/* line 183, ../sass/_content.scss */
+/* line 187, ../sass/_content.scss */
 .person-right .puzzle-pieces {
-  top: 34px;
-  right: 120px;
+  top: -56px;
+  right: -70px;
+  transform: scale(0.3) rotateZ(5deg);
+  display: block;
+  width: 260px;
+  height: 270px;
 }
 
-/* line 188, ../sass/_content.scss */
+/* line 196, ../sass/_content.scss */
 .puzzle-pieces {
   position: absolute;
-  transform: scale(0.35) rotateZ(5deg);
 }
 
-/* line 192, ../sass/_content.scss */
+/* line 200, ../sass/_content.scss */
 img[class*="puzzle-piece-"] {
   position: absolute;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 @keyframes example {
@@ -508,137 +517,236 @@ img[class*="puzzle-piece-"] {
   }
 }
 /*  First Row  */
-/* line 200, ../sass/_content.scss */
+/* line 210, ../sass/_content.scss */
 .puzzle-piece-1 {
   left: 0px;
   top: 0px;
-  animation: example 600ms 600ms infinite forwards alternate;
 }
 
-/* line 201, ../sass/_content.scss */
+/* line 211, ../sass/_content.scss */
 .puzzle-piece-2 {
   left: 60px;
   top: 0px;
-  animation: example 600ms calc(600ms*5) infinite forwards alternate;
 }
 
-/* line 202, ../sass/_content.scss */
+/* line 212, ../sass/_content.scss */
 .puzzle-piece-3 {
   left: 100px;
   top: 0px;
-  animation: example 600ms calc(600ms*7) infinite forwards alternate;
 }
 
-/* line 203, ../sass/_content.scss */
+/* line 213, ../sass/_content.scss */
 .puzzle-piece-4 {
   left: 180px;
   top: 0px;
-  animation: example 600ms calc(600ms*11) infinite forwards alternate;
 }
 
 /*  Second Row  */
-/* line 206, ../sass/_content.scss */
+/* line 216, ../sass/_content.scss */
 .puzzle-piece-5 {
   left: 0px;
   top: 43px;
-  animation: example 600ms calc(600ms*16) forwards alternate;
 }
 
-/* line 207, ../sass/_content.scss */
+/* line 217, ../sass/_content.scss */
 .puzzle-piece-6 {
   left: 41px;
   top: 65px;
-  animation: example 600ms calc(600ms*2) forwards alternate;
 }
 
-/* line 208, ../sass/_content.scss */
+/* line 218, ../sass/_content.scss */
 .puzzle-piece-7 {
   left: 118px;
   top: 45px;
-  animation: example 600ms calc(600ms*8) forwards alternate;
 }
 
-/* line 209, ../sass/_content.scss */
+/* line 219, ../sass/_content.scss */
 .puzzle-piece-8 {
+  left: 162px;
+  top: 64px;
+}
+
+/*  Third Row  */
+/* line 222, ../sass/_content.scss */
+.puzzle-piece-9 {
+  left: 0px;
+  top: 127px;
+}
+
+/* line 223, ../sass/_content.scss */
+.puzzle-piece-10 {
+  left: 58px;
+  top: 104px;
+}
+
+/* line 224, ../sass/_content.scss */
+.puzzle-piece-11 {
+  left: 100px;
+  top: 122px;
+}
+
+/* line 225, ../sass/_content.scss */
+.puzzle-piece-12 {
+  left: 178px;
+  top: 107px;
+}
+
+/*  Fourth Row  */
+/* line 228, ../sass/_content.scss */
+.puzzle-piece-13 {
+  left: 0px;
+  top: 168px;
+}
+
+/* line 229, ../sass/_content.scss */
+.puzzle-piece-14 {
+  left: 42px;
+  top: 187px;
+}
+
+/* line 230, ../sass/_content.scss */
+.puzzle-piece-15 {
+  left: 119px;
+  top: 167px;
+}
+
+/* line 231, ../sass/_content.scss */
+.puzzle-piece-16 {
+  left: 162px;
+  top: 187px;
+}
+
+/* line 233, ../sass/_content.scss */
+.puzzle-piece-1.is-visible {
+  left: 0px;
+  top: 0px;
+  animation: example 600ms 600ms forwards;
+}
+
+/* line 234, ../sass/_content.scss */
+.puzzle-piece-2.is-visible {
+  left: 60px;
+  top: 0px;
+  animation: example 600ms calc(600ms*5) forwards;
+}
+
+/* line 235, ../sass/_content.scss */
+.puzzle-piece-3.is-visible {
+  left: 100px;
+  top: 0px;
+  animation: example 600ms calc(600ms*7) forwards;
+}
+
+/* line 236, ../sass/_content.scss */
+.puzzle-piece-4.is-visible {
+  left: 180px;
+  top: 0px;
+  animation: example 600ms calc(600ms*11) forwards;
+}
+
+/*  Second Row  */
+/* line 239, ../sass/_content.scss */
+.puzzle-piece-5.is-visible {
+  left: 0px;
+  top: 43px;
+  animation: example 600ms calc(600ms*16) forwards;
+}
+
+/* line 240, ../sass/_content.scss */
+.puzzle-piece-6.is-visible {
+  left: 41px;
+  top: 65px;
+  animation: example 600ms calc(600ms*2) forwards;
+}
+
+/* line 241, ../sass/_content.scss */
+.puzzle-piece-7.is-visible {
+  left: 118px;
+  top: 45px;
+  animation: example 600ms calc(600ms*8) forwards;
+}
+
+/* line 242, ../sass/_content.scss */
+.puzzle-piece-8.is-visible {
   left: 162px;
   top: 64px;
   animation: example 600ms calc(600ms*10) forwards;
 }
 
 /*  Third Row  */
-/* line 212, ../sass/_content.scss */
-.puzzle-piece-9 {
+/* line 245, ../sass/_content.scss */
+.puzzle-piece-9.is-visible {
   left: 0px;
   top: 127px;
   animation: example 600ms calc(600ms*13) forwards;
 }
 
-/* line 213, ../sass/_content.scss */
-.puzzle-piece-10 {
+/* line 246, ../sass/_content.scss */
+.puzzle-piece-10.is-visible {
   left: 58px;
   top: 104px;
   animation: example 600ms calc(600ms*6) forwards;
 }
 
-/* line 214, ../sass/_content.scss */
-.puzzle-piece-11 {
+/* line 247, ../sass/_content.scss */
+.puzzle-piece-11.is-visible {
   left: 100px;
   top: 122px;
   animation: example 600ms calc(600ms*12) forwards;
 }
 
-/* line 215, ../sass/_content.scss */
-.puzzle-piece-12 {
+/* line 248, ../sass/_content.scss */
+.puzzle-piece-12.is-visible {
   left: 178px;
   top: 107px;
   animation: example 600ms calc(600ms*15) forwards;
 }
 
 /*  Fourth Row  */
-/* line 218, ../sass/_content.scss */
-.puzzle-piece-13 {
+/* line 251, ../sass/_content.scss */
+.puzzle-piece-13.is-visible {
   left: 0px;
   top: 168px;
   animation: example 600ms calc(600ms*4) forwards;
 }
 
-/* line 219, ../sass/_content.scss */
-.puzzle-piece-14 {
+/* line 252, ../sass/_content.scss */
+.puzzle-piece-14.is-visible {
   left: 42px;
   top: 187px;
   animation: example 600ms calc(600ms*9) forwards;
 }
 
-/* line 220, ../sass/_content.scss */
-.puzzle-piece-15 {
+/* line 253, ../sass/_content.scss */
+.puzzle-piece-15.is-visible {
   left: 119px;
   top: 167px;
   animation: example 600ms calc(600ms*14) forwards;
 }
 
-/* line 221, ../sass/_content.scss */
-.puzzle-piece-16 {
+/* line 254, ../sass/_content.scss */
+.puzzle-piece-16.is-visible {
   left: 162px;
   top: 187px;
   animation: example 600ms calc(600ms*3) forwards;
 }
 
-/* line 224, ../sass/_content.scss */
+/* line 256, ../sass/_content.scss */
 .section-video {
   padding: 60px 0;
 }
-/* line 226, ../sass/_content.scss */
+/* line 258, ../sass/_content.scss */
 .section-video img {
   display: none;
 }
 @media only screen and (min-width: 992px) {
-  /* line 226, ../sass/_content.scss */
+  /* line 258, ../sass/_content.scss */
   .section-video img {
     display: block;
   }
 }
 
-/* line 234, ../sass/_content.scss */
+/* line 266, ../sass/_content.scss */
 .video-container {
   width: 100%;
   margin: auto;
@@ -647,26 +755,27 @@ img[class*="puzzle-piece-"] {
   box-shadow: 0 0.5px 2px rgba(0, 18, 57, 0.1), 0 11px 17px rgba(0, 18, 57, 0.09), inset 0 -3px 20px rgba(0, 18, 57, 0.1), inset 0 8px 13px #fff, inset 0 0 7px rgba(0, 18, 57, 0.05);
 }
 @media only screen and (min-width: 992px) {
-  /* line 234, ../sass/_content.scss */
+  /* line 266, ../sass/_content.scss */
   .video-container {
     width: 900px;
   }
 }
 
 /*End of page*/
-/* line 246, ../sass/_content.scss */
+/* line 278, ../sass/_content.scss */
 .section-end {
   padding: 60px 0;
   background-color: var(--grey-light);
   display: none;
+  position: relative;
 }
 @media only screen and (min-width: 1200px) {
-  /* line 246, ../sass/_content.scss */
+  /* line 278, ../sass/_content.scss */
   .section-end {
     display: block;
   }
 }
-/* line 253, ../sass/_content.scss */
+/* line 286, ../sass/_content.scss */
 .section-end .row-grid {
   display: grid;
   grid-template-columns: 100%;
@@ -676,32 +785,32 @@ img[class*="puzzle-piece-"] {
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  /* line 253, ../sass/_content.scss */
+  /* line 286, ../sass/_content.scss */
   .section-end .row-grid {
     text-align: left;
     grid-template-columns: 200px 600px;
     grid-gap: 100px;
   }
 }
-/* line 266, ../sass/_content.scss */
+/* line 299, ../sass/_content.scss */
 .section-end .logo {
   width: 250px;
   margin: auto;
 }
 @media only screen and (min-width: 992px) {
-  /* line 266, ../sass/_content.scss */
+  /* line 299, ../sass/_content.scss */
   .section-end .logo {
     margin: 0;
   }
 }
 
 /*Footer*/
-/* line 276, ../sass/_content.scss */
+/* line 309, ../sass/_content.scss */
 footer {
   padding: 60px;
   position: relative;
 }
-/* line 279, ../sass/_content.scss */
+/* line 312, ../sass/_content.scss */
 footer:before {
   content: "";
   display: block;
@@ -713,7 +822,7 @@ footer:before {
   top: 0;
   left: 0;
 }
-/* line 290, ../sass/_content.scss */
+/* line 323, ../sass/_content.scss */
 footer ul {
   justify-content: center;
   display: flex;
@@ -724,38 +833,38 @@ footer ul {
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  /* line 290, ../sass/_content.scss */
+  /* line 323, ../sass/_content.scss */
   footer ul {
     flex-direction: row;
     text-align: left;
   }
 }
-/* line 302, ../sass/_content.scss */
+/* line 335, ../sass/_content.scss */
 footer ul li {
   padding: 10px;
 }
 @media only screen and (min-width: 992px) {
-  /* line 302, ../sass/_content.scss */
+  /* line 335, ../sass/_content.scss */
   footer ul li {
     padding: 0 10px;
   }
 }
-/* line 307, ../sass/_content.scss */
+/* line 340, ../sass/_content.scss */
 footer ul li:last-child {
   padding: 0;
 }
-/* line 310, ../sass/_content.scss */
+/* line 343, ../sass/_content.scss */
 footer ul li a {
   color: var(--black);
 }
-/* line 315, ../sass/_content.scss */
+/* line 348, ../sass/_content.scss */
 footer .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
-/* line 320, ../sass/_content.scss */
+/* line 353, ../sass/_content.scss */
 footer .social-icons svg {
   margin: 5px 10px;
   width: 50px;
