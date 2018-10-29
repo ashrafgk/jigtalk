@@ -4,7 +4,7 @@ body {
 //MAIN BANNER SECTIONS
 .main-mobile-banner {
     background-color: var(--grey-light);
-    height: calc(100vh - 60px);
+    height: calc(100vh - 135px);
     display: flex;
     position: relative;
     align-items: center;
@@ -15,7 +15,6 @@ body {
     }
     .mobile-logo {
         margin-bottom: 30px;
-        
     }
 }
 .mobile-logo {
