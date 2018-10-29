@@ -117,39 +117,44 @@ nav .navbar-collapse {
 nav .navbar-collapse .app-store-btn {
   margin: 15px 0;
 }
-/* line 94, ../sass/_nav.scss */
+/* line 93, ../sass/_nav.scss */
+nav .navbar-collapse .navbar-toggler {
+  position: absolute;
+  right: 20px;
+}
+/* line 98, ../sass/_nav.scss */
 nav ul.navbar-nav li {
   border-bottom: 1px solid #ddd;
 }
-/* line 96, ../sass/_nav.scss */
+/* line 100, ../sass/_nav.scss */
 nav ul.navbar-nav li:nth-child(1) {
   border-top: 1px solid #ddd;
 }
-/* line 102, ../sass/_nav.scss */
+/* line 106, ../sass/_nav.scss */
 nav ul.navbar-nav li:nth-child(even) {
   background-color: #f2f2f2;
 }
-/* line 106, ../sass/_nav.scss */
+/* line 110, ../sass/_nav.scss */
 nav .dropdown ul {
   flex-direction: column;
 }
-/* line 109, ../sass/_nav.scss */
+/* line 113, ../sass/_nav.scss */
 nav button.navbar-toggler {
   justify-self: flex-end;
   margin-left: auto;
 }
 @media only screen and (min-width: 992px) {
-  /* line 109, ../sass/_nav.scss */
+  /* line 113, ../sass/_nav.scss */
   nav button.navbar-toggler {
     display: none;
   }
 }
-/* line 116, ../sass/_nav.scss */
+/* line 120, ../sass/_nav.scss */
 nav .social-icons {
   display: flex;
   justify-content: center;
 }
-/* line 119, ../sass/_nav.scss */
+/* line 123, ../sass/_nav.scss */
 nav .social-icons svg {
   margin: 0 5px;
 }
@@ -181,7 +186,7 @@ body {
 /* line 26, ../sass/_content.scss */
 .main-mobile-banner {
   background-color: #f2f2f2;
-  height: 100vh;
+  height: calc(100vh - 60px);
   display: flex;
   align-items: center;
   justify-content: center;
