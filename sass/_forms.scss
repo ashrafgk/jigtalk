@@ -5,13 +5,13 @@
     grid-template-columns: repeat(2, minmax(100px, 200px));
     grid-gap: 15px;
     justify-content: center;
-    @media #{$lg} {
+    @media #{$md} {
         display: none;
     }
 }
 .download-form {
     display: none;
-    @media #{$lg} {
+    @media #{$md} {
         display: block;
     }
     p {
@@ -32,7 +32,7 @@ form input.input--country-code {
     border-radius: 1em;
     padding: 10px 15px;
     margin-bottom: 10px;
-    @media #{$lg} {
+    @media #{$md} {
         margin-right: 10px;
         margin-bottom: 0;
         width: 100px;
@@ -55,7 +55,7 @@ form input.input--phone-number {
     border-radius: 1em;
     padding: 10px 15px;
     margin-bottom: 10px;
-    @media #{$lg} {
+    @media #{$md} {
         margin-right: 10px;
         margin-bottom: 0;
         width: 400px;
@@ -83,7 +83,6 @@ form button {
     font-style: italic;
     padding: 15px 35px;
     text-transform: uppercase;
-    
     transition: 0.3s box-shadow ease;
 }
 form button:hover {

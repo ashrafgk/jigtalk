@@ -12,9 +12,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script src="js/lazysizes.min.js" async=""></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-
     <script src="js/main.js" async=""></script>
     
 </head>
@@ -45,7 +43,7 @@
                         <a href="https://jigtalk.com/contact/">Contact</a>
                     </li>
                     <li>
-                        <a href="https://jigtalk.com/blog/">The Bloj</a>
+                        <a href="https://jigtalk.com/blog/">Talk More</a>
                     </li>
                     <li>
                         <a href="https://jigtalk.com/press/">Press</a>
@@ -116,7 +114,7 @@
                             <a href="https://jigtalk.com/contact/">Contact</a>
                         </li>
                         <li>
-                            <a href="https://jigtalk.com/blog/">The Bloj</a>
+                            <a href="https://jigtalk.com/blog/">Talk More</a>
                         </li>
                         <li>
                             <a href="https://jigtalk.com/press/">Press</a>
@@ -137,7 +135,10 @@
                     <div class="sub-links">
                         <span>T&C's</span> / <span>Privacy Policy</span> / <span>Safety</span> / <span>Careers</span>
                     </div>
-                    <a href=""><img src="img/App_Store_blue.png" class="app-store-btn"></a>
+                    <div class="app-btn-container">
+                        <a href=""><img src="img/App_Store_blue.png" class="app-store-btn"></a>
+                        <a href=""><img src="img/GooglePlay_red.png" class="app-store-btn"></a>
+                    </div>
                     <!-- Social Icons -->
                     <div class="social-icons">
                         <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
@@ -161,12 +162,15 @@
                 <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/logo-icon.svg">
                 <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/logo-text.svg">
             </div>
-            <a href=""><img src="img/App_Store_blue.png" class="app-store-btn"></a>
+            <div class="app-btn-container">
+                <a href=""><img src="img/App_Store_blue.png" class="app-store-btn"></a>
+                <a href=""><img src="img/GooglePlay_red.png" class="app-store-btn"></a>
+            </div>
         </div>
-        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/dist/images/images/scroll-down.png" class="scroll-down">
+        <a href="#next" class="scroll-down"><img src="http://jigtalk.com/wp-content/themes/jigtalk-co/dist/images/images/scroll-down.png"></a>
     </div>
     <!-- Main Banner -->
-    <div class="main-banner">
+    <div class="main-banner" id="next">
         <div class="container">
             <div class="row-grid">
                 <header>
@@ -195,11 +199,12 @@
                 </div>
             </div>
         </div>
-        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/dist/images/images/scroll-down.png" class="scroll-down xs-hidden">
+        <a href="#press" class="scroll-down xs-hidden"><img src="http://jigtalk.com/wp-content/themes/jigtalk-co/dist/images/images/scroll-down.png"></a>
     </div>
-    <div class="section-logos">
+    <div class="section-logos" id="press">
         <div class="container">
             <h2>People have been talking about us!</h2>
+        </div>
             <div class="logo-items">
                 <div class="logo-item">
                     <a href="https://news.sky.com/" target="_blank">
@@ -239,11 +244,83 @@
     </div>
     <div class="section-video" style="position: relative;">
         <div class="container">
-            
-            
-            <div class="video-container" style="">
+            <div class="person-left">
+                <img src="img/pointing-person-left.png">
+                <div class="puzzle-pieces">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece1.png"
+                        alt="" class="puzzle-piece-1">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece2.png"
+                        alt="" class="puzzle-piece-2">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece3.png"
+                        alt="" class="puzzle-piece-3">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece4.png"
+                        alt="" class="puzzle-piece-4 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece5.png"
+                        alt="" class="puzzle-piece-5 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece6.png"
+                        alt="" class="puzzle-piece-6 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece7.png"
+                        alt="" class="puzzle-piece-7 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece8.png"
+                        alt="" class="puzzle-piece-8 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece9.png"
+                        alt="" class="puzzle-piece-9 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece10.png"
+                        alt="" class="puzzle-piece-10 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece11.png"
+                        alt="" class="puzzle-piece-11 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece12.png"
+                        alt="" class="puzzle-piece-12 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece13.png"
+                        alt="" class="puzzle-piece-13 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece14.png"
+                        alt="" class="puzzle-piece-14 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece15.png"
+                        alt="" class="puzzle-piece-15 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece16.png"
+                        alt="" class="puzzle-piece-16 ">
+                </div>
+            </div>
+            <div class="person-right">
+                <img src="img/pointing-person-right.png">
+                <div class="puzzle-pieces">
+                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece1.png"
+                        alt="" class="puzzle-piece-1">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece2.png"
+                        alt="" class="puzzle-piece-2">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece3.png"
+                        alt="" class="puzzle-piece-3">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece4.png"
+                        alt="" class="puzzle-piece-4 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece5.png"
+                        alt="" class="puzzle-piece-5 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece6.png"
+                        alt="" class="puzzle-piece-6 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece7.png"
+                        alt="" class="puzzle-piece-7 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece8.png"
+                        alt="" class="puzzle-piece-8 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece9.png"
+                        alt="" class="puzzle-piece-9 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece10.png"
+                        alt="" class="puzzle-piece-10 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece11.png"
+                        alt="" class="puzzle-piece-11 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece12.png"
+                        alt="" class="puzzle-piece-12 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece13.png"
+                        alt="" class="puzzle-piece-13 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece14.png"
+                        alt="" class="puzzle-piece-14 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece15.png"
+                        alt="" class="puzzle-piece-15 ">
+                    <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece16.png"
+                        alt="" class="puzzle-piece-16 ">
+                </div>
+            </div>
+            <div class="video-container">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="lazyload embed-responsive-item" data-src="https://www.youtube.com/embed/UQW7bgceIMI?rel=0&amp;showinfo=0"
+                    <iframe class="lazyload embed-responsive-item" src="https://www.youtube.com/embed/UQW7bgceIMI?rel=0&amp;showinfo=0"
                         allowfullscreen=""></iframe>
                 </div>
             </div>
@@ -270,80 +347,7 @@
                     </div>
                 </div>
             </div>
-            <div class="person-left">
-                    <img data-src="img/pointing-person-left.png" class="lazyload" style="position: relative; z-index: 0;max-width: 100%;">
-                    <div class="puzzle-pieces">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece1.png"
-                            alt="" class="puzzle-piece-1">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece2.png"
-                            alt="" class="puzzle-piece-2">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece3.png"
-                            alt="" class="puzzle-piece-3">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece4.png"
-                            alt="" class="puzzle-piece-4 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece5.png"
-                            alt="" class="puzzle-piece-5 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece6.png"
-                            alt="" class="puzzle-piece-6 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece7.png"
-                            alt="" class="puzzle-piece-7 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece8.png"
-                            alt="" class="puzzle-piece-8 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece9.png"
-                            alt="" class="puzzle-piece-9 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece10.png"
-                            alt="" class="puzzle-piece-10 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece11.png"
-                            alt="" class="puzzle-piece-11 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece12.png"
-                            alt="" class="puzzle-piece-12 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece13.png"
-                            alt="" class="puzzle-piece-13 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece14.png"
-                            alt="" class="puzzle-piece-14 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece15.png"
-                            alt="" class="puzzle-piece-15 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece16.png"
-                            alt="" class="puzzle-piece-16 ">
-                    </div>
-                </div>
-                <div class="person-right">
-                    <img data-src="img/pointing-person-right.png" class="lazyload" style="position: relative; z-index: 0;max-width: 100%;">
-                    <div class="puzzle-pieces">
-                            <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece1.png"
-                            alt="" class="puzzle-piece-1">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece2.png"
-                            alt="" class="puzzle-piece-2">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece3.png"
-                            alt="" class="puzzle-piece-3">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece4.png"
-                            alt="" class="puzzle-piece-4 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece5.png"
-                            alt="" class="puzzle-piece-5 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece6.png"
-                            alt="" class="puzzle-piece-6 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece7.png"
-                            alt="" class="puzzle-piece-7 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece8.png"
-                            alt="" class="puzzle-piece-8 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece9.png"
-                            alt="" class="puzzle-piece-9 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece10.png"
-                            alt="" class="puzzle-piece-10 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece11.png"
-                            alt="" class="puzzle-piece-11 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece12.png"
-                            alt="" class="puzzle-piece-12 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece13.png"
-                            alt="" class="puzzle-piece-13 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece14.png"
-                            alt="" class="puzzle-piece-14 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece15.png"
-                            alt="" class="puzzle-piece-15 ">
-                        <img src="http://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/puzzles/puzzle-piece16.png"
-                            alt="" class="puzzle-piece-16 ">
-                    </div>
-                </div>
+            
         </div>
     </div>
     <footer>
@@ -353,7 +357,10 @@
                     <img src="https://jigtalk.com/wp-content/themes/jigtalk-co/resources/images/logo-text.svg" style="max-width: 120px; margin-left: 10px;">
                 </div>
                 <p style="margin-bottom: 30px;">Download it for free</p>
-                <a href=""><img src="img/App_Store_blue.png" class="app-store-btn" style="margin-bottom: 30px;"></a>
+                <div class="app-btn-container">
+                    <a href=""><img src="img/App_Store_blue.png" class="app-store-btn"></a>
+                    <a href=""><img src="img/GooglePlay_red.png" class="app-store-btn"></a>
+                </div>
             </div>
             <div class="social-icons">
                 <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
@@ -368,37 +375,30 @@
             </div>
             <ul>
                 <li>
-                    <a href="https://jigtalk.com/contact/">About</a>
-                </li>
-                <li>
-                    <a href="https://jigtalk.com/contact/">Contact</a>
-                </li>
-                <li>
-                    <a href="https://jigtalk.com/blog/">The Bloj</a>
-                </li>
-                <li>
-                    <a href="https://jigtalk.com/press/">Press</a>
-                </li>
-                <li>
                     <a href="https://jigtalk.com/faq/">FAQs</a>
                 </li>
                 <li>
                     <a href="https://jigtalk.com/terms/">T&C's</a>
                 </li>
                 <li>
-                    <a href="https://jigtalk.com/privacy/">Privacy</a>
+                    <a href="https://jigtalk.com/privacy/">Privacy Policy</a>
                 </li>
                 <li>
-                    <a href="https://jigtalk.com/safety/">Safety</a>
+                    <a href="https://jigtalk.com/safety/">Safety Guidelines</a>
+                </li>
+                <li>
+                    <a href="https://jigtalk.com/contact/">Contact US</a>
                 </li>
                 <li>
                     <a href="https://jigtalk.com/safety/">Careers</a>
                 </li>
             </ul>
         </div>
-        </div>
+        
     </footer>
-
+    <div style="background: white;text-align: center;padding: 10px;display: flex;justify-content: center;align-items: center;font-size: 0.8em;font-style: italic;line-height: 1; text-transform: uppercase;">
+        <span style="line-height: 0;">Getting Jiggy in the UK</span><span><img src="https://investors.jigtalk.com/wp-content/uploads/2018/03/flag.png" style="width: 23px;margin-left: 12px;"></span>
+    </div>
 </body>
 
 </html>

@@ -10,12 +10,13 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    @media #{$lg} {
+    @media #{$md} {
         display: none;
     }
     .mobile-logo {
         margin-bottom: 30px;
     }
+    
 }
 .mobile-logo {
     display: flex;
@@ -33,12 +34,11 @@ body {
     background: white;
     overflow: hidden;
     position: relative;
-    @media #{$md} {
-        padding: 100px 0;
+    @media #{$sm} {
+        padding: 60px 0;
     }
-    @media #{$lg} {
-        height: calc(100vh - 60px);
-        max-height: 900px;
+    @media #{$md} {
+        padding: 80px 0;
     }
     .row-grid {
         display: grid;
@@ -46,9 +46,13 @@ body {
         grid-gap: 60;
         justify-content: center;
         align-items: center;
-        @media #{$md} {
+        @media #{$sm} {
             grid-template-columns: 40% repeat(1, minmax(100px, 1fr));
             grid-gap: 100px;
+        }
+        @media #{$md} {
+            grid-template-columns: 1fr 350px;
+            grid-gap: 60px;
         }
         @media #{$lg} {
             grid-template-columns: 1fr 350px;
@@ -71,12 +75,15 @@ body {
         }
     }
     h1 {
-        font-size: 7vh;
+        font-size: 2.5em;
         color: var(--blue-light);
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 2px;
         @media #{$md} {
+            font-size: 4.0em;
+        }
+        @media #{$lg} {
             font-size: 4.5em;
         }
     }
@@ -101,6 +108,9 @@ body {
     width: 30px;
     transform: translateY(0);
     animation: c 600ms infinite alternate;
+    img {
+        width: 30px;
+    }
 }
 
 .mobile--container {
@@ -115,8 +125,12 @@ body {
     background: linear-gradient(180deg, #fff -45.17%, rgba(255, 255, 255, 0) 130.21%), #FAFBFC;
     box-shadow: 0 0.5px 2px rgba(0, 18, 57, .1), 0 11px 17px rgba(0, 18, 57, .09), inset 0 -3px 20px rgba(0, 18, 57, .1), inset 0 8px 13px #fff, inset 0 0 7px rgba(0, 18, 57, .05);
     padding: 10px;
-    margin: 20px auto;
+    margin: 0 auto 40px auto;
     @media #{$md} {
+        width: 280px;
+        margin: 0;
+    }
+    @media #{$lg} {
         width: 310px;
         margin: 0;
     }
@@ -134,10 +148,16 @@ video {
     display: block;
     width: 100%;
 }
+.app-btn-container {
+    display: flex;
+    flex-direction: column;
+    .app-store-btn:first-child {
+        margin-bottom: 15px;
+    }
+}
 
 /*Press Section*/
 .section-logos {
-    background-color: var(--grey-light);
     padding: 60px 0;
     text-align: center;
 }
@@ -149,7 +169,13 @@ video {
     display: flex;
     flex-direction: column;
     @media #{$md} {
-        flex-direction: row;
+        flex-direction: column;
+    }
+    .logo-item:nth-child(odd) {
+        background-color: var(--grey-light);
+    }
+    .logo-item:nth-child(even) {
+        background-color: white;
     }
 }
 .logo-item {
@@ -165,32 +191,84 @@ video {
 /*Video Section*/
 .person-left {
     position: absolute;
-    top: 70px;
-    left: 15px;
     width: 220px;
-    z-index: 23;
+    z-index: 100;
+    @media #{$md} {
+        left: 5px;
+        top: 165px;
+    }
+    @media #{$lg} {
+        left: 15px;
+        top: 185px;
+    }
+    >img {
+        position: relative;
+        max-width: 100%;
+        z-index: 10;
+    }
     .puzzle-pieces {
-        top: -86px;
-    left: -60px;
-        transform: scale(0.3) rotateZ(5deg);
+        top: -88px;
+        left: -54px;
+        transform: scale(0.2) rotateZ(5deg);
         display: block;
         width: 260px;
         height: 270px;
+        z-index: 100;
+    }
+    @media #{$md} {
+        &:after {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 510px;
+            width: 120px;
+            height: 20px;
+            border-radius: 40px;
+            background: rgba(0, 0, 0, 0.40);
+            filter: blur(14px);
+        }
     }
 }
 .person-right {
     position: absolute;
-    top: 65px;
-    right: 25px;
+    
     width: 220px;
     z-index: 100;
+    @media #{$md} {
+        right: 5px;
+        top: 165px;
+    }
+    @media #{$lg} {
+        right: 25px;
+        top: 185px;
+    }
+    >img {
+        position: relative;
+        max-width: 100%;
+        z-index: 10;
+    }
     .puzzle-pieces {
         top: -56px;
-        right: -70px;
-        transform: scale(0.3) rotateZ(5deg);
+        right: -65px;
+        transform: scale(0.2) rotateZ(-7deg);
         display: block;
         width: 260px;
         height: 270px;
+        z-index: 100;
+    }
+    @media #{$md} {
+        &:after {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 510px;
+            right: 0;
+            width: 120px;
+            height: 20px;
+            border-radius: 40px;
+            background: rgba(0, 0, 0, 0.40);
+            filter: blur(14px);
+        }
     }
 }
 .puzzle-pieces {
@@ -276,11 +354,11 @@ img[class*="puzzle-piece-"] {
 
 /*End of page*/
 .section-end {
-    padding: 60px 0;
+    padding: 80px 0 60px 0;
     background-color: var(--grey-light);
     display: none;
     position: relative;
-    @media #{$lg} {
+    @media #{$md} {
         display: block;
     }
     .row-grid {
@@ -307,15 +385,19 @@ img[class*="puzzle-piece-"] {
 
 /*Footer*/
 footer {
-    padding: 60px;
+    padding: 30px 0;
     position: relative;
+    background-color: var(--grey-light);
+    @media #{$md} {
+        background-color: white;
+    }
     &:before {
         content: "";
         display: block;
         height: 2px;
         width: 100%;
         background: url(https://jigtalk.com/wp-content/themes/jigtalk-co/dist/images/images/navigation-border.png);
-        background-size: 50%;
+        background-size: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -323,7 +405,8 @@ footer {
     ul {
         justify-content: center;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -333,23 +416,37 @@ footer {
             text-align: left;
         }
         li {
-            padding: 10px;
+            padding: 5px 0;
             @media #{$md} {
-                padding: 0 10px;
-            }
-            &:last-child {
-                padding: 0;
+                padding: 10px 0;
             }
             a {
-                color: var(--black);
+                color: var(--grey-dark);
+                @media #{$md} {
+                    color: var(--black);
+                }
+            }
+            &:after {
+                content: "/";
+                padding: 5px;
+                @media #{$md} {
+                    padding: 10px;
+                }
             }
         }
+        li:last-child {
+            &:after {
+                content: " ";
+                padding: 0px;
+            }
+        }
+        
     }
     .social-icons {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;
+        margin: 30px 0;
         svg {
             margin: 5px 10px;
             width: 50px;

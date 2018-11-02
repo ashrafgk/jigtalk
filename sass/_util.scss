@@ -33,13 +33,13 @@ $lg: "only screen and (min-width: 1200px)";
 
 .xs-hidden {
     display: none;
-    @media #{$lg} {
+    @media #{$md} {
         display: block;
     }
 }
 .lg-hidden {
     display: block;
-    @media #{$lg} {
+    @media #{$md} {
         display: none;
     }
 }

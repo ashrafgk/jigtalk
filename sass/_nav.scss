@@ -13,15 +13,16 @@ nav {
         height: 2px;
         width: 100%;
         background: url(https://jigtalk.com/wp-content/themes/jigtalk-co/dist/images/images/navigation-border.png);
-        background-size: 50%;
+        background-size: 100%;
         position: absolute;
         top: 0;
         left: 0;
-        @media #{$lg} {
+        @media #{$md} {
+            top: auto;
             bottom: 0;
         }
     }
-    @media #{$lg} {
+    @media #{$md} {
         z-index: 40;
         background: var(--grey-light);
         height: 70px;
@@ -35,7 +36,7 @@ nav {
     .logo {
         width: 150px;
         display: none;
-        @media #{$lg} {
+        @media #{$md} {
             display: block;
         }
     }
