@@ -594,7 +594,7 @@ video {
 @media only screen and (min-width: 1200px) {
   /* line 192, ../sass/_content.scss */
   .person-left {
-    left: 15px;
+    left: 25px;
     top: 185px;
   }
 }
