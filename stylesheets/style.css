@@ -66,7 +66,7 @@ nav:before {
   height: 2px;
   width: 100%;
   background: url(https://jigtalk.com/wp-content/themes/jigtalk-co/dist/images/images/navigation-border.png);
-  background-size: 100%;
+  background-size: 50%;
   position: absolute;
   top: 0;
   left: 0;
@@ -155,7 +155,42 @@ nav ul li a {
   text-transform: uppercase;
   color: var(--black);
 }
-/* line 83, ../sass/_nav.scss */
+/* line 80, ../sass/_nav.scss */
+nav ul li a:hover {
+  color: var(--blue);
+  text-decoration: none;
+}
+/* line 88, ../sass/_nav.scss */
+nav .dropdown .dropdown-toggle::after {
+  transform: rotateZ(0deg);
+  transition: transform 0.3s ease;
+}
+/* line 93, ../sass/_nav.scss */
+nav .dropdown.show .dropdown-toggle::after {
+  transform: rotateZ(180deg);
+}
+/* line 98, ../sass/_nav.scss */
+nav .dropdown-menu {
+  display: block;
+  padding: 0;
+  width: 250px;
+  transform: translate3d(0px, 0px, 0px) !important;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+/* line 106, ../sass/_nav.scss */
+nav .dropdown-menu.show {
+  left: -100px !important;
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0px, 30px, 0px) !important;
+  box-shadow: 0px 3px 15px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+/* line 117, ../sass/_nav.scss */
 nav .navbar-collapse {
   background-color: transparent;
   position: fixed;
@@ -166,70 +201,112 @@ nav .navbar-collapse {
   padding: 30px;
   transition: 250ms background-color ease;
 }
-/* line 92, ../sass/_nav.scss */
+/* line 126, ../sass/_nav.scss */
 nav .navbar-collapse .app-store-btn {
   margin: 15px 0;
 }
-/* line 95, ../sass/_nav.scss */
+/* line 129, ../sass/_nav.scss */
 nav .navbar-collapse .navbar-toggler {
   position: absolute;
   right: 20px;
 }
-/* line 99, ../sass/_nav.scss */
+/* line 133, ../sass/_nav.scss */
 nav .navbar-collapse > div {
   opacity: 0;
   transition: 300ms opacity 250ms ease;
 }
-/* line 103, ../sass/_nav.scss */
+/* line 137, ../sass/_nav.scss */
 nav .navbar-collapse.show {
   background-color: rgba(0, 0, 0, 0.6);
 }
-/* line 105, ../sass/_nav.scss */
+/* line 139, ../sass/_nav.scss */
 nav .navbar-collapse.show > div {
   opacity: 1;
 }
-/* line 110, ../sass/_nav.scss */
+/* line 144, ../sass/_nav.scss */
 nav .dropdown ul {
   flex-direction: column;
 }
-/* line 113, ../sass/_nav.scss */
+/* line 146, ../sass/_nav.scss */
+nav .dropdown ul li {
+  padding: 15px;
+  width: 100%;
+  border-bottom: 1px solid var(--black);
+}
+/* line 151, ../sass/_nav.scss */
+nav .dropdown ul li:nth-child(odd) {
+  background-color: white;
+}
+/* line 154, ../sass/_nav.scss */
+nav .dropdown ul li:nth-child(even) {
+  background-color: var(--grey-light);
+}
+/* line 157, ../sass/_nav.scss */
+nav .dropdown ul li:last-child {
+  border: 0;
+}
+/* line 161, ../sass/_nav.scss */
 nav ul.navbar-nav li {
   border-bottom: 1px solid var(--grey-medium);
 }
-/* line 115, ../sass/_nav.scss */
+/* line 163, ../sass/_nav.scss */
 nav ul.navbar-nav li:nth-child(1) {
   border-top: 1px solid var(--grey-medium);
 }
-/* line 118, ../sass/_nav.scss */
+/* line 166, ../sass/_nav.scss */
 nav ul.navbar-nav li:nth-child(even) {
   background-color: var(--grey-light);
 }
-/* line 121, ../sass/_nav.scss */
+/* line 169, ../sass/_nav.scss */
 nav ul.navbar-nav li a {
   font-size: 1.2em;
 }
-/* line 125, ../sass/_nav.scss */
+/* line 173, ../sass/_nav.scss */
 nav .sub-links {
   color: var(--grey-dark);
   padding: 10px;
 }
-/* line 130, ../sass/_nav.scss */
+/* line 178, ../sass/_nav.scss */
 nav button.navbar-toggler {
   justify-self: flex-end;
   margin-left: auto;
 }
 @media only screen and (min-width: 992px) {
-  /* line 130, ../sass/_nav.scss */
+  /* line 178, ../sass/_nav.scss */
   nav button.navbar-toggler {
     display: none;
   }
 }
-/* line 137, ../sass/_nav.scss */
+/* line 185, ../sass/_nav.scss */
+nav button.navbar-toggler.collapsed svg line:first-child {
+  transform: translateY(0px);
+  transition: transform 0.2s linear;
+}
+/* line 186, ../sass/_nav.scss */
+nav button.navbar-toggler.collapsed svg line:nth-child(3) {
+  transform: translateY(0px);
+  transition: transform 0.2s linear;
+}
+/* line 188, ../sass/_nav.scss */
+nav button.navbar-toggler svg line:first-child {
+  transform: translateY(4px);
+  transition: transform 0.2s linear;
+}
+/* line 189, ../sass/_nav.scss */
+nav button.navbar-toggler svg line:nth-child(3) {
+  transform: translateY(-4px);
+  transition: transform 0.2s linear;
+}
+/* line 191, ../sass/_nav.scss */
 nav .social-icons {
   display: flex;
   justify-content: center;
 }
-/* line 140, ../sass/_nav.scss */
+/* line 195, ../sass/_nav.scss */
+nav .social-icons a:hover svg path {
+  fill: #000;
+}
+/* line 199, ../sass/_nav.scss */
 nav .social-icons svg {
   margin: 0 5px;
 }
