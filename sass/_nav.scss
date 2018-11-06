@@ -40,6 +40,27 @@ nav {
             display: block;
         }
     }
+    .nav-logo {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 2rem;
+        padding: 15px;
+        .logo-icon {
+            width: 55px;
+            margin: 0 auto 7px;
+        }
+        .logo-text {
+            width: 110px;
+            margin: 0 auto 10px;
+        }
+        h1 {
+            font-size: 1rem;
+            margin: 0;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+    }
     .links-wrapper {
         display: none;
         justify-self: flex-start;
@@ -123,9 +144,6 @@ nav {
         left: 0;
         padding: 30px;
         transition: 250ms background-color ease;
-        .app-store-btn {
-            margin: 15px 0;
-        }
         .navbar-toggler {
             position: absolute;
             right: 20px;
@@ -174,7 +192,9 @@ nav {
         color: var(--grey-dark);
         padding: 10px;
     }
-   
+    .app-btn-container {
+        margin: 10px auto;
+    }
     button.navbar-toggler {
         justify-self: flex-end;
         margin-left: auto;

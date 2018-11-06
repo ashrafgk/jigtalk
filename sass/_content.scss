@@ -23,7 +23,21 @@ body {
     flex-direction: column;
     background-color: white;
     border-radius: 2rem;
-    padding: 15px;
+    padding: 30px;
+    .logo-icon {
+        width: 75px;
+        margin: 0 auto 15px;
+    }
+    .logo-text {
+        width: 140px;
+        margin: 0 auto 15px;
+    }
+    h1 {
+        font-size: 1rem;
+        margin: 0;
+        text-transform: uppercase;
+        font-style: italic;
+    }
 }
 .app-store-btn {
     max-width: 150px;
@@ -107,7 +121,7 @@ body {
     margin: auto;
     width: 30px;
     transform: translateY(0);
-    animation: c 600ms infinite alternate;
+    animation: c 350ms infinite alternate;
     img {
         width: 30px;
     }
@@ -151,6 +165,7 @@ video {
 .app-btn-container {
     display: flex;
     flex-direction: column;
+    text-align: center;
     .app-store-btn:first-child {
         margin-bottom: 15px;
     }
@@ -158,25 +173,57 @@ video {
 
 /*Press Section*/
 .section-logos {
-    padding: 60px 0;
     text-align: center;
+    position: relative;
+    padding-top: 30px;
+    background-color: var(--grey-light); 
+    @media #{$md} { margin-top: 60px; }
 }
-.section-logos h2 {
+.section-logos span {
+    position: absolute;
+    display: inline-block;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: var(--grey-medium);
     font-weight: bold;
-    margin-bottom: 30px;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 16px 0 12px;
+    webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.35);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.35);
+    border-radius: 0.5rem;
+    width: 200px;
 }
 .logo-items {
     display: flex;
     flex-direction: column;
-    @media #{$md} {
-        flex-direction: column;
-    }
     .logo-item:nth-child(odd) {
         background-color: var(--grey-light);
     }
     .logo-item:nth-child(even) {
         background-color: white;
     }
+    @media #{$md} {
+        max-width: 1140px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        .logo-item:nth-child(odd) {
+            background-color: transparent;
+        }
+        .logo-item:nth-child(even) {
+            background-color: transparent;
+        }
+    }
+    
 }
 .logo-item {
     padding: 30px;
@@ -308,28 +355,28 @@ img[class*="puzzle-piece-"] {
 .puzzle-piece-15 { left: 119px; top: 167px; }
 .puzzle-piece-16 { left: 162px; top: 187px;}
 
-.puzzle-piece-1.is-visible  { left: 0px; top: 0px; animation: example 600ms 600ms forwards; }
-.puzzle-piece-2.is-visible  { left: 60px; top: 0px; animation: example 600ms calc(600ms*5) forwards; }
-.puzzle-piece-3.is-visible  { left: 100px; top: 0px; animation: example 600ms calc(600ms*7) forwards; }
-.puzzle-piece-4.is-visible  { left: 180px; top: 0px; animation: example 600ms calc(600ms*11) forwards; }
+.puzzle-piece-1.is-visible  { left: 0px; top: 0px; animation: example 350ms 350ms forwards; }
+.puzzle-piece-2.is-visible  { left: 60px; top: 0px; animation: example 350ms calc(350ms*5) forwards; }
+.puzzle-piece-3.is-visible  { left: 100px; top: 0px; animation: example 350ms calc(350ms*7) forwards; }
+.puzzle-piece-4.is-visible  { left: 180px; top: 0px; animation: example 350ms calc(350ms*11) forwards; }
 
 /*  Second Row  */
-.puzzle-piece-5.is-visible  { left: 0px; top: 43px; animation: example 600ms calc(600ms*16) forwards;}
-.puzzle-piece-6.is-visible  { left: 41px; top: 65px; animation: example 600ms calc(600ms*2) forwards;}
-.puzzle-piece-7.is-visible  { left: 118px; top: 45px; animation: example 600ms calc(600ms*8) forwards;}
-.puzzle-piece-8.is-visible  { left: 162px; top: 64px; animation: example 600ms calc(600ms*10) forwards;}
+.puzzle-piece-5.is-visible  { left: 0px; top: 43px; animation: example 350ms calc(350ms*16) forwards;}
+.puzzle-piece-6.is-visible  { left: 41px; top: 65px; animation: example 350ms calc(350ms*2) forwards;}
+.puzzle-piece-7.is-visible  { left: 118px; top: 45px; animation: example 350ms calc(350ms*8) forwards;}
+.puzzle-piece-8.is-visible  { left: 162px; top: 64px; animation: example 350ms calc(350ms*10) forwards;}
 
 /*  Third Row  */
-.puzzle-piece-9.is-visible  { left: 0px; top: 127px; animation: example 600ms calc(600ms*13) forwards;}
-.puzzle-piece-10.is-visible { left: 58px; top: 104px; animation: example 600ms calc(600ms*6) forwards;}
-.puzzle-piece-11.is-visible  { left: 100px; top: 122px; animation: example 600ms calc(600ms*12) forwards;}
-.puzzle-piece-12.is-visible  { left: 178px; top: 107px; animation: example 600ms calc(600ms*15) forwards;}
+.puzzle-piece-9.is-visible  { left: 0px; top: 127px; animation: example 350ms calc(350ms*13) forwards;}
+.puzzle-piece-10.is-visible { left: 58px; top: 104px; animation: example 350ms calc(350ms*6) forwards;}
+.puzzle-piece-11.is-visible  { left: 100px; top: 122px; animation: example 350ms calc(350ms*12) forwards;}
+.puzzle-piece-12.is-visible  { left: 178px; top: 107px; animation: example 350ms calc(350ms*15) forwards;}
 
 /*  Fourth Row  */
-.puzzle-piece-13.is-visible { left: 0px; top: 168px; animation: example 600ms calc(600ms*4) forwards;}
-.puzzle-piece-14.is-visible { left: 42px; top: 187px; animation: example 600ms calc(600ms*9) forwards;}
-.puzzle-piece-15.is-visible { left: 119px; top: 167px; animation: example 600ms calc(600ms*14) forwards;}
-.puzzle-piece-16.is-visible { left: 162px; top: 187px; animation: example 600ms calc(600ms*3) forwards;}
+.puzzle-piece-13.is-visible { left: 0px; top: 168px; animation: example 350ms calc(350ms*4) forwards;}
+.puzzle-piece-14.is-visible { left: 42px; top: 187px; animation: example 350ms calc(350ms*9) forwards;}
+.puzzle-piece-15.is-visible { left: 119px; top: 167px; animation: example 350ms calc(350ms*14) forwards;}
+.puzzle-piece-16.is-visible { left: 162px; top: 187px; animation: example 350ms calc(350ms*3) forwards;}
 
 .section-video {
     padding: 60px 0;
@@ -375,12 +422,25 @@ img[class*="puzzle-piece-"] {
         }
     }
     .logo {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
         width: 250px;
         margin: auto;
         @media #{$md} {
             margin: 0
         }
+        .logo-icon {
+            max-width: 65px;
+            margin: 0 auto 15px;
+        }
+        .logo-text {
+            max-width: 120px;
+            margin: auto;
+        }
     }
+    
 }
 
 /*Footer*/
@@ -424,12 +484,21 @@ footer {
                 color: var(--grey-dark);
                 @media #{$md} {
                     color: var(--black);
+                    font-style: italic;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+                &:hover {
+                    color: var(--blue);
+                    text-decoration: none;
                 }
             }
             &:after {
                 content: "/";
                 padding: 5px;
                 @media #{$md} {
+                    content: "";
                     padding: 10px;
                 }
             }
