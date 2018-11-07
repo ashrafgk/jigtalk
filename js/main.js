@@ -1,10 +1,4 @@
-$( "button.navbar-toggler" ).click(function() {
-	$( "body" ).toggleClass("freeze-screen");
-  });
-  function myCallback (el) {
-    el.classList.add('is-visible');
-}
-
+setTimeout(function(){
 ScrollReveal().reveal('.puzzle-piece-1', { afterReveal: myCallback });
 ScrollReveal().reveal('.puzzle-piece-2', { afterReveal: myCallback });
 ScrollReveal().reveal('.puzzle-piece-3', { afterReveal: myCallback });
@@ -21,3 +15,12 @@ ScrollReveal().reveal('.puzzle-piece-13', { afterReveal: myCallback });
 ScrollReveal().reveal('.puzzle-piece-14', { afterReveal: myCallback });
 ScrollReveal().reveal('.puzzle-piece-15', { afterReveal: myCallback });
 ScrollReveal().reveal('.puzzle-piece-16', { afterReveal: myCallback });
+}, 1000);
+
+$( "button.navbar-toggler" ).click(function() {
+	$( "body" ).toggleClass("freeze-screen");
+  });
+  function myCallback (el) {
+    el.classList.add('is-visible');
+}
+
