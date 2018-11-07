@@ -280,7 +280,7 @@ nav ul.navbar-nav li:nth-child(even) {
 }
 /* line 187, ../sass/_nav.scss */
 nav ul.navbar-nav li a {
-  font-size: 1.15em;
+  font-size: 1em;
 }
 /* line 191, ../sass/_nav.scss */
 nav .sub-links {
