@@ -38,27 +38,49 @@ body {
     0% {
         transform: rotateZ(0deg) scale3d(0,0,0);
     }
-    35% {
+    20% {
         transform: rotateZ(0deg) scale3d(1.2,1.2,1.2);
     }
+    25% {
+        transform: rotateZ(0deg) scale3d(1,1,1);
+    }
+    30% {
+        transform: rotateZ(0deg) scale3d(1,1,1);
+    }
+    35% {
+        transform: rotateZ(-8deg) scale3d(1,1,1);
+    }
+    40% {
+        transform: rotateZ(8deg) scale3d(1,1,1);
+    }
     45% {
-        transform: rotateZ(0deg) scale3d(1,1,1);
+        transform: rotateZ(-8deg) scale3d(1,1,1);
+    }
+    50% {
+        transform: rotateZ(8deg) scale3d(1,1,1);
+    }
+    55% {
+        transform: rotateZ(-8deg) scale3d(1,1,1);
     }
     60% {
-        transform: rotateZ(0deg) scale3d(1,1,1);
+        transform: rotateZ(5deg) scale3d(1,1,1);
     }
-    60% {
-        transform: rotateZ(-6deg) scale3d(1,1,1);
+    65% {
+        transform: rotateZ(-5deg) scale3d(1,1,1);
     }
     70% {
-        transform: rotateZ(6deg) scale3d(1,1,1);
-    }
-    80% {
-        transform: rotateZ(-3deg) scale3d(1,1,1);
-    }
-    90% {
         transform: rotateZ(3deg) scale3d(1,1,1);
     }
+    75% {
+        transform: rotateZ(-3deg) scale3d(1,1,1);
+    }
+    80% {
+        transform: rotateZ(3deg) scale3d(1,1,1);
+    }
+    85% {
+        transform: rotateZ(0deg) scale3d(1,1,1);
+    }
+    
     100% {
         transform: rotateZ(0deg) scale3d(1,1,1);
     }
@@ -87,7 +109,7 @@ body {
         width: 75px;
         margin: 0 auto 0;
         transform: scale3d(0,0,0) rotateY(0deg);
-        animation: 1000ms swing 600ms forwards;
+        animation: 1600ms swing 600ms forwards;
     }
     .logo-text {
         width: 160px;
