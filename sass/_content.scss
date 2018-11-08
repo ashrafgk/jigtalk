@@ -18,64 +18,138 @@ body {
     }
     
 }
-@keyframes s {
+@-webkit-keyframes s {
     0% {
-        transform: scale3d(0,0,0);
+        -webkit-transform: scale3d(0,0,0);
+                transform: scale3d(0,0,0);
     }
     80% {
-        transform: scale3d(1.125,1.125,1.125);
+        -webkit-transform: scale3d(1.125,1.125,1.125);
+                transform: scale3d(1.125,1.125,1.125);
     }
     100% {
-        transform: scale3d(1,1,1);
+        -webkit-transform: scale3d(1,1,1);
+                transform: scale3d(1,1,1);
+    }
+}
+@keyframes s {
+    0% {
+        -webkit-transform: scale3d(0,0,0);
+                transform: scale3d(0,0,0);
+    }
+    80% {
+        -webkit-transform: scale3d(1.125,1.125,1.125);
+                transform: scale3d(1.125,1.125,1.125);
+    }
+    100% {
+        -webkit-transform: scale3d(1,1,1);
+                transform: scale3d(1,1,1);
+    }
+}
+@-webkit-keyframes swing {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+    }
+    15% {
+        -webkit-transform: rotateZ(10deg);
+                transform: rotateZ(10deg);
+    }
+    30% {
+        -webkit-transform: rotateZ(-10deg);
+                transform: rotateZ(-10deg);
+    }
+    45% {
+        -webkit-transform: rotateZ(6deg);
+                transform: rotateZ(6deg);
+    }
+    60% {
+        -webkit-transform: rotateZ(-6deg);
+                transform: rotateZ(-6deg);
+    }
+    75% {
+        -webkit-transform: rotateZ(3deg);
+                transform: rotateZ(3deg);
+    }
+    90% {
+        -webkit-transform: rotateZ(-3deg);
+                transform: rotateZ(-3deg);
+    }
+    100% {
+        -webkit-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
     }
 }
 @keyframes swing {
     0% {
-        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
     }
     15% {
-        transform: rotateZ(10deg);
+        -webkit-transform: rotateZ(10deg);
+                transform: rotateZ(10deg);
     }
     30% {
-        transform: rotateZ(-10deg);
+        -webkit-transform: rotateZ(-10deg);
+                transform: rotateZ(-10deg);
     }
     45% {
-        transform: rotateZ(6deg);
+        -webkit-transform: rotateZ(6deg);
+                transform: rotateZ(6deg);
     }
     60% {
-        transform: rotateZ(-6deg);
+        -webkit-transform: rotateZ(-6deg);
+                transform: rotateZ(-6deg);
     }
     75% {
-        transform: rotateZ(3deg);
+        -webkit-transform: rotateZ(3deg);
+                transform: rotateZ(3deg);
     }
     90% {
-        transform: rotateZ(-3deg);
+        -webkit-transform: rotateZ(-3deg);
+                transform: rotateZ(-3deg);
     }
     100% {
-        transform: rotateZ(0deg);
+        -webkit-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
     }
 }
 .mobile-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
     background-color: white;
     border-radius: 2rem;
     padding: 32px;
-    align-items: center;
-    justify-content: center;
-    transform: scale3d(0,0,0);
-    animation: 400ms s 250ms forwards;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: scale3d(0,0,0);
+            transform: scale3d(0,0,0);
+    -webkit-animation: 400ms s 250ms forwards;
+            animation: 400ms s 250ms forwards;
     .logo-icon {
         width: 75px;
         margin: 0 auto 0;
-        transform: scale3d(0,0,0) rotateY(0deg);
-        animation: 400ms s 400ms forwards, 800ms swing 600ms forwards;
+        -webkit-transform: scale3d(0,0,0) rotateY(0deg);
+                transform: scale3d(0,0,0) rotateY(0deg);
+        -webkit-animation: 400ms s 400ms forwards, 800ms swing 700ms forwards;
+                animation: 400ms s 400ms forwards, 800ms swing 700ms forwards;
     }
     .logo-text {
         width: 160px;
         margin: -1px auto 10px;
-        transform: scale3d(0,0,0);
-        animation: 400ms s 400ms forwards;
+        -webkit-transform: scale3d(0,0,0);
+                transform: scale3d(0,0,0);
+        -webkit-animation: 400ms s 400ms forwards;
+                animation: 400ms s 400ms forwards;
     }
     h1 {
         font-size: 1.2rem;
