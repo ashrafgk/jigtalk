@@ -174,8 +174,14 @@ body {
     text-align: center;
     transform: translateY(0);
     animation: c 350ms infinite alternate;
+    @media #{$md} { 
+        bottom: 5px;
+    }
     img {
         width: 36px;
+        @media #{$md} { 
+            width: 30px;
+        }
     }
 }
 
@@ -540,7 +546,7 @@ footer {
                     color: var(--black);
                     text-transform: uppercase;
                     font-weight: bold;
-                    font-size: 14px;
+                    font-size: 0.9rem;
                 }
                 &:hover {
                     color: var(--blue);
