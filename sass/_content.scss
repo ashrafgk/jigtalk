@@ -239,7 +239,7 @@ video {
     left: 0;
     right: 0;
     margin: auto;
-    background-color: var(--grey-medium);
+    background-color: #d8d8d8;
     font-weight: bold;
     font-size: 1rem;
     line-height: 1;
@@ -498,7 +498,8 @@ img[class*="puzzle-piece-"] {
 
 /*Footer*/
 footer {
-    padding: 30px 0;
+    border-top: 2px solid var(--black);
+    padding: 15px 0;
     position: relative;
     background-color: var(--grey-light);
     @media #{$md} {
@@ -507,12 +508,12 @@ footer {
     &:before {
         content: "";
         display: block;
-        height: 2px;
+        height: 1px;
         width: 100%;
         background: url(https://jigtalk.com/wp-content/themes/jigtalk-co/dist/images/images/navigation-border.png);
-        background-size: 100%;
+        background-size: 60%;
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
     }
     ul {
@@ -531,13 +532,12 @@ footer {
         li {
             padding: 5px 0;
             @media #{$md} {
-                padding: 10px 0;
+                padding: 0 10px;
             }
             a {
                 color: var(--grey-dark);
                 @media #{$md} {
                     color: var(--black);
-                    font-style: italic;
                     text-transform: uppercase;
                     font-weight: bold;
                     font-size: 14px;
@@ -551,8 +551,8 @@ footer {
                 content: "/";
                 padding: 5px;
                 @media #{$md} {
-                    content: "";
-                    padding: 10px;
+                    content: none;
+                    padding: 0 10px;
                 }
             }
         }
@@ -560,6 +560,10 @@ footer {
             &:after {
                 content: " ";
                 padding: 0px;
+                @media #{$md} {
+                    content: none;
+                    padding: 0 10px;
+                }
             }
         }
         
@@ -568,7 +572,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 30px 0;
+        margin: 0 0 10px 0;
         svg {
             margin: 5px 10px;
             width: 50px;

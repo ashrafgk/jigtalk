@@ -647,7 +647,7 @@ video {
   left: 0;
   right: 0;
   margin: auto;
-  background-color: var(--grey-medium);
+  background-color: #d8d8d8;
   font-weight: bold;
   font-size: 1rem;
   line-height: 1;
@@ -1139,7 +1139,8 @@ img[class*="puzzle-piece-"] {
 /*Footer*/
 /* line 500, ../sass/_content.scss */
 footer {
-  padding: 30px 0;
+  border-top: 2px solid var(--black);
+  padding: 15px 0;
   position: relative;
   background-color: var(--grey-light);
 }
@@ -1149,19 +1150,19 @@ footer {
     background-color: white;
   }
 }
-/* line 507, ../sass/_content.scss */
+/* line 508, ../sass/_content.scss */
 footer:before {
   content: "";
   display: block;
-  height: 2px;
+  height: 1px;
   width: 100%;
   background: url(https://jigtalk.com/wp-content/themes/jigtalk-co/dist/images/images/navigation-border.png);
-  background-size: 100%;
+  background-size: 60%;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
 }
-/* line 518, ../sass/_content.scss */
+/* line 519, ../sass/_content.scss */
 footer ul {
   justify-content: center;
   display: flex;
@@ -1173,31 +1174,30 @@ footer ul {
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  /* line 518, ../sass/_content.scss */
+  /* line 519, ../sass/_content.scss */
   footer ul {
     flex-direction: row;
     text-align: left;
   }
 }
-/* line 531, ../sass/_content.scss */
+/* line 532, ../sass/_content.scss */
 footer ul li {
   padding: 5px 0;
 }
 @media only screen and (min-width: 992px) {
-  /* line 531, ../sass/_content.scss */
+  /* line 532, ../sass/_content.scss */
   footer ul li {
-    padding: 10px 0;
+    padding: 0 10px;
   }
 }
-/* line 536, ../sass/_content.scss */
+/* line 537, ../sass/_content.scss */
 footer ul li a {
   color: var(--grey-dark);
 }
 @media only screen and (min-width: 992px) {
-  /* line 536, ../sass/_content.scss */
+  /* line 537, ../sass/_content.scss */
   footer ul li a {
     color: var(--black);
-    font-style: italic;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
@@ -1216,8 +1216,8 @@ footer ul li:after {
 @media only screen and (min-width: 992px) {
   /* line 550, ../sass/_content.scss */
   footer ul li:after {
-    content: "";
-    padding: 10px;
+    content: none;
+    padding: 0 10px;
   }
 }
 /* line 560, ../sass/_content.scss */
@@ -1225,14 +1225,21 @@ footer ul li:last-child:after {
   content: " ";
   padding: 0px;
 }
-/* line 567, ../sass/_content.scss */
+@media only screen and (min-width: 992px) {
+  /* line 560, ../sass/_content.scss */
+  footer ul li:last-child:after {
+    content: none;
+    padding: 0 10px;
+  }
+}
+/* line 571, ../sass/_content.scss */
 footer .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 0;
+  margin: 0 0 10px 0;
 }
-/* line 572, ../sass/_content.scss */
+/* line 576, ../sass/_content.scss */
 footer .social-icons svg {
   margin: 5px 10px;
   width: 50px;
