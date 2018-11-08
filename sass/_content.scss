@@ -18,7 +18,8 @@ body {
     }
     
 }
-@-webkit-keyframes s {
+
+@keyframes anim-appear {
     0% {
         -webkit-transform: scale3d(0,0,0);
                 transform: scale3d(0,0,0);
@@ -32,87 +33,36 @@ body {
                 transform: scale3d(1,1,1);
     }
 }
-@keyframes s {
-    0% {
-        -webkit-transform: scale3d(0,0,0);
-                transform: scale3d(0,0,0);
-    }
-    80% {
-        -webkit-transform: scale3d(1.125,1.125,1.125);
-                transform: scale3d(1.125,1.125,1.125);
-    }
-    100% {
-        -webkit-transform: scale3d(1,1,1);
-                transform: scale3d(1,1,1);
-    }
-}
-@-webkit-keyframes swing {
-    0% {
-        -webkit-transform: rotateZ(0deg);
-                transform: rotateZ(0deg);
-    }
-    15% {
-        -webkit-transform: rotateZ(10deg);
-                transform: rotateZ(10deg);
-    }
-    30% {
-        -webkit-transform: rotateZ(-10deg);
-                transform: rotateZ(-10deg);
-    }
-    45% {
-        -webkit-transform: rotateZ(6deg);
-                transform: rotateZ(6deg);
-    }
-    60% {
-        -webkit-transform: rotateZ(-6deg);
-                transform: rotateZ(-6deg);
-    }
-    75% {
-        -webkit-transform: rotateZ(3deg);
-                transform: rotateZ(3deg);
-    }
-    90% {
-        -webkit-transform: rotateZ(-3deg);
-                transform: rotateZ(-3deg);
-    }
-    100% {
-        -webkit-transform: rotateZ(0deg);
-                transform: rotateZ(0deg);
-    }
-}
+
 @keyframes swing {
     0% {
-        -webkit-transform: rotateZ(0deg);
-                transform: rotateZ(0deg);
+        transform: rotateZ(0deg) scale3d(0,0,0);
     }
-    15% {
-        -webkit-transform: rotateZ(10deg);
-                transform: rotateZ(10deg);
-    }
-    30% {
-        -webkit-transform: rotateZ(-10deg);
-                transform: rotateZ(-10deg);
+    35% {
+        transform: rotateZ(0deg) scale3d(1.2,1.2,1.2);
     }
     45% {
-        -webkit-transform: rotateZ(6deg);
-                transform: rotateZ(6deg);
+        transform: rotateZ(0deg) scale3d(1,1,1);
     }
     60% {
-        -webkit-transform: rotateZ(-6deg);
-                transform: rotateZ(-6deg);
+        transform: rotateZ(0deg) scale3d(1,1,1);
     }
-    75% {
-        -webkit-transform: rotateZ(3deg);
-                transform: rotateZ(3deg);
+    60% {
+        transform: rotateZ(-6deg) scale3d(1,1,1);
+    }
+    70% {
+        transform: rotateZ(6deg) scale3d(1,1,1);
+    }
+    80% {
+        transform: rotateZ(-3deg) scale3d(1,1,1);
     }
     90% {
-        -webkit-transform: rotateZ(-3deg);
-                transform: rotateZ(-3deg);
+        transform: rotateZ(3deg) scale3d(1,1,1);
     }
     100% {
-        -webkit-transform: rotateZ(0deg);
-                transform: rotateZ(0deg);
+        transform: rotateZ(0deg) scale3d(1,1,1);
     }
+   
 }
 .mobile-logo {
     display: -webkit-box;
@@ -130,26 +80,20 @@ body {
             align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-transform: scale3d(0,0,0);
-            transform: scale3d(0,0,0);
-    -webkit-animation: 400ms s 250ms forwards;
-            animation: 400ms s 250ms forwards;
+    justify-content: center;
+    transform: scale3d(0,0,0);
+    animation: 400ms anim-appear 250ms forwards;
     .logo-icon {
         width: 75px;
         margin: 0 auto 0;
-        -webkit-transform: scale3d(0,0,0) rotateY(0deg);
-                transform: scale3d(0,0,0) rotateY(0deg);
-        -webkit-animation: 400ms s 400ms forwards, 800ms swing 600ms forwards;
-                animation: 400ms s 400ms forwards, 800ms swing 600ms forwards;
+        transform: scale3d(0,0,0) rotateY(0deg);
+        animation: 1000ms swing 600ms forwards;
     }
     .logo-text {
         width: 160px;
         margin: -1px auto 10px;
-        -webkit-transform: scale3d(0,0,0);
-                transform: scale3d(0,0,0);
-        -webkit-animation: 400ms s 400ms forwards;
-                animation: 400ms s 400ms forwards;
+        transform: scale3d(0,0,0);
+        animation: 400ms anim-appear 600ms forwards;
     }
     h1 {
         font-size: 1.2rem;
@@ -239,7 +183,7 @@ body {
 }
 .scroll-down {
     position: absolute;
-    bottom: 55px;
+    bottom: 40px;
     left: 0;
     right: 0;
     margin: auto;
