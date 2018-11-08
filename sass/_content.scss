@@ -18,25 +18,67 @@ body {
     }
     
 }
+@keyframes s {
+    0% {
+        transform: scale3d(0,0,0);
+    }
+    80% {
+        transform: scale3d(1.125,1.125,1.125);
+    }
+    100% {
+        transform: scale3d(1,1,1);
+    }
+}
+@keyframes swing {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    15% {
+        transform: rotateZ(10deg);
+    }
+    30% {
+        transform: rotateZ(-10deg);
+    }
+    45% {
+        transform: rotateZ(6deg);
+    }
+    60% {
+        transform: rotateZ(-6deg);
+    }
+    75% {
+        transform: rotateZ(3deg);
+    }
+    90% {
+        transform: rotateZ(-3deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
 .mobile-logo {
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 2rem;
-    height: 250px;
-    width: 250px;
+    padding: 32px;
     align-items: center;
     justify-content: center;
+    transform: scale3d(0,0,0);
+    animation: 400ms s 250ms forwards;
     .logo-icon {
         width: 75px;
-        margin: 0 auto 15px;
+        margin: 0 auto 0;
+        transform: scale3d(0,0,0);
+        animation: 400ms s 400ms forwards, 800ms swing 750ms forwards;
     }
     .logo-text {
-        width: 140px;
-        margin: 0 auto 15px;
+        width: 160px;
+        margin: -1px auto 10px;
+        transform: scale3d(0,0,0);
+        animation: 400ms s 400ms forwards;
     }
     h1 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin: 0;
         text-transform: uppercase;
         font-style: italic;
@@ -127,11 +169,13 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    width: 30px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
     transform: translateY(0);
     animation: c 350ms infinite alternate;
     img {
-        width: 30px;
+        width: 36px;
     }
 }
 
@@ -441,12 +485,12 @@ img[class*="puzzle-piece-"] {
             margin: 0
         }
         .logo-icon {
-            max-width: 65px;
-            margin: 0 auto 15px;
+            width: 75px;
+            margin: 0 auto 0;
         }
         .logo-text {
-            max-width: 120px;
-            margin: auto;
+            width: 160px;
+            margin: -1px auto 10px;
         }
     }
     
