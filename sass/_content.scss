@@ -68,8 +68,8 @@ body {
     .logo-icon {
         width: 75px;
         margin: 0 auto 0;
-        transform: scale3d(0,0,0);
-        animation: 400ms s 400ms forwards, 800ms swing 750ms forwards;
+        transform: scale3d(0,0,0) rotateY(0deg);
+        animation: 400ms s 400ms forwards, 800ms swing 600ms forwards;
     }
     .logo-text {
         width: 160px;
