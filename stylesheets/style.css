@@ -487,8 +487,8 @@ body {
   margin: 0 auto 0;
   -webkit-transform: scale3d(0, 0, 0) rotateY(0deg);
   transform: scale3d(0, 0, 0) rotateY(0deg);
-  -webkit-animation: 400ms s 400ms forwards, 800ms swing forwards;
-  animation: 400ms s 400ms forwards, 800ms swing forwards;
+  -webkit-animation: 400ms s 400ms forwards, 800ms swing 400ms forwards;
+  animation: 400ms s 400ms forwards, 800ms swing 400ms forwards;
 }
 /* line 146, ../sass/_content.scss */
 .mobile-logo .logo-text {
